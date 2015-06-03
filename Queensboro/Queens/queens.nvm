@@ -1,0 +1,8 @@
+;Image=queens.gif
+rect http://www.levity.com/brooklyn/Queens/QnsNorthWest.html 0,0 130,144
+rect http://www.levity.com/brooklyn/Queens/QnsCentral.html 130,0 186,144
+rect http://www.levity.com/brooklyn/Queens/QnsPark.html 186,0 222,144
+rect http://www.levity.com/brooklyn/Queens/QnsNorthEast.html 220,0 363,144 
+rect http://www.levity.com/brooklyn/Queens/QnsSouthWest.html 0,144 222,310
+rect http://www.levity.com/brooklyn/Queens/QnsSouthEast.html 222,144 363,310
+rect http://www.levity.com/brooklyn/Queens/QnsBeach.html 0,310 363,394

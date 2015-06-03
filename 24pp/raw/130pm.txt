@@ -1,0 +1,252 @@
+<HTML>
+<HEAD>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+
+<STYLE TYPE="text/css">
+<!--
+
+A:link 			{ color: #B4042E; 
+                          font-weight: bold; 
+                          text-decoration: none; }
+A:active 		{ color: #A6037E; 
+                          font-weight: bold; 
+                          text-decoration: none; }
+A:visited 		{ color: #B4042E; 
+                          font-weight: bold; 
+                          text-decoration: none; } 
+A:hover			{ color: #A6037E; font-weight: bold; 
+                          text-decoration: underline; }
+
+.first                  { 
+                          font-size: 12px;
+                          font-weight: bold;
+                          font-family: verdana, arial, sans-serif;
+                          margin: 4px;
+                          border: 1px solid black; 
+                          background-color: #D3E6EA; 
+                          padding: 6px;
+                        }
+
+.second                 { 
+                          font-size: 12px;
+                          font-weight: bold;
+                          font-family: verdana, arial, sans-serif;
+                          margin: 4px;
+                          border: 1px solid black; 
+                          background-color: #C3C6EA; 
+                          padding: 6px;
+                        }
+
+-->
+</STYLE> 
+
+<TITLE>LitKicks 24 Hour Poetry Party</TITLE>
+</HEAD>
+
+<BODY>
+<CENTER>
+<TABLE>
+  <TR>
+    <TD>
+      <IMG SRC="partystars.jpg">
+    </TD>
+  </TR>
+</TABLE>
+
+<TABLE BORDER=0 CELLPADDING=12 WIDTH="100%" BGCOLOR="#FFFFFF">
+  <TR>
+    <TD VALIGN=TOP>
+       <TABLE>
+         <TR>
+           <TD VALIGN=MIDDLE>
+             <FONT FACE="helvetica, arial">
+             &nbsp;&nbsp;&nbsp;&nbsp;1:30pm EST<BR><BR>
+             </FONT>
+           </TD>
+         </TR>
+       </TABLE>
+       <DIV CLASS="FIRST"> 
+        <I>Welcome to the LitKicks 24 Hour Poetry Party.  We'd like to start with an unusual poem contributed by David Amram, who is better known as a jazz pianist who jammed with Jack Kerouac back in the 50's, as well as an incredibly diverse composer and ethnomusicologist.  Amram was inspired to write this highly personal and touching poem just a few weeks ago, while performing a series of concerts in China.</I><BR><BR>
+
+<H3>My Bhudda Angel in Chengdu</H3>
+<I>by David Amram</I><BR><BR>
+
+It's 5 a.m. in Chengdu China<BR>
+I can't sleep <BR>
+a wink<BR><BR>
+
+Staring out the window<BR>
+water drips on dishes<BR>
+in the sink<BR><BR>
+
+A bike goes by<BR>
+a young gal sits<BR>
+side-saddle on the back<BR><BR>
+
+looks like Bhudda's angel daughter<BR>
+sent from heaven<BR>
+dressed in black<BR><BR>
+
+She glances up<BR>
+her dark eyes<BR>
+make the morning come to life<BR><BR>
+
+Suddenly I realize<BR>
+long ago this angel <BR>
+was my wife<BR><BR>
+
+Wanted now to tell her<BR>
+when we married<BR>
+many years ago<BR><BR>
+
+That I never would have left her<BR>
+if I knew then<BR>
+what I now know<BR><BR>
+
+Waited for what seemed<BR>
+1000 years to see<BR>
+those eyes again<BR><BR>
+
+Hoping someday I could tell her<BR>
+that our love<BR>
+would never end<BR><BR>
+
+Never dared to tell her then<BR>
+because of all the love<BR>
+we shared<BR><BR>
+
+It was more than I could handle<BR>
+even though<BR>
+I really cared<BR><BR>
+
+Now it's many lifetimes later<BR>
+here in Chengdu <BR>
+5 a.m.<BR><BR>
+
+My favorite wife<BR>
+from an earlier life<BR>
+the sweetest one of all of them<BR><BR>
+
+Once she told me in our lifetime<BR>
+our true love <BR>
+would never die<BR><BR>
+
+And that even if I left her<BR>
+Bhudda's angel<BR>
+still would fly<BR><BR>
+
+Now she tells me broken hearts<BR>
+will all heal themselves<BR>
+in time<BR><BR>
+
+And that all the pain I caused her<BR>
+now is gone<BR>
+except for mine<BR><BR>
+
+Now in Chengdu<BR>
+through the window<BR>
+she's come back to me again<BR><BR>
+
+Riding on the back seat<BR>
+of a bike <BR>
+side-saddle with her friend<BR><BR>
+
+Guess that since she passed me by<BR>
+there's only one thing<BR>
+I can do<BR><BR>
+
+Get myself a new gal<BR>
+and a bicycle<BR>
+that's built for two<BR><BR>
+
+When in this reincarnation <BR>
+when I've found <BR>
+a brand new bride<BR><BR>
+
+Maybe I'll find out<BR>
+it's Bhudda's angel<BR>
+riding by my side<BR><BR>
+
+Telling me wherever<BR>
+ we have been<BR>
+and through whichever life<BR><BR>
+
+Through all our reincarnations<BR>
+she has always been<BR>
+my wife<BR><BR>
+
+Now its 7 in the morning<BR>
+Chengdu streets <BR>
+are filled with light<BR><BR>
+
+I'm still staring out the window<BR>
+as the day<BR>
+is growing bright<BR><BR>
+
+Waiting by the window<BR>
+need to see<BR>
+my true love's eyes again<BR><BR>
+
+when she rides by <BR>
+on her bicycle<BR>
+side saddle with her friend<BR><BR>
+
+Then I'll tell her that I love her<BR>
+this time I know <BR>
+what to do<BR><BR>
+
+Waiting by the window<BR>
+for my Bhudda angel<BR>
+in Chengdu<BR><BR>
+       </DIV>
+   </TD>
+   <TD WIDTH=300 ALIGN=CENTER VALIGN=TOP>
+      <TABLE>
+        <TR>
+          <TD>
+             <DIV CLASS="SECOND"> 
+             <CENTER><FONT SIZE="+1">1pm writing challenge</FONT></CENTER><BR>
+             Write a few lines that describe where you are sitting right now.  What do you see around you?  How much time do you spend in this spot, and how does being here make you feel?  Please try to rhyme with the words "rain", "door" or "me" as much as you can while responding to this challenge.<BR><BR>
+             We will create a composite poem from all the responses.  Please write quickly and honestly.  To submit your words, click this button:<BR>
+             <CENTER>
+             <A HREF="http://www.litkicks.com/BeatPages/partypost.jsp"><IMG SRC="http://www.litkicks.com/24pp/partywrite.jpg" ALT="write"></A></CENTER><BR>
+             The next writing challenge will begin at 1 pm.
+             
+             </DIV>
+          </TD>
+        </TR>
+        <TR>
+          <TD>
+           <TABLE BGCOLOR="#00003F" CELLPADDING=2">
+             <TR>
+               <TD>
+                 <IMG SRC="http://lit-fuse.net/litkicks/photos/doreenrock1pm.jpg"><BR>
+               </TD>
+             </TR>
+           </TABLE>
+           <FONT SIZE="-1" FACE="Arial, Helvetica">Photo contributed by doreen peri</FONT>
+          </TD>
+        </TR>
+        <TR>
+          <TD>
+            <HR NOSHADE COLOR="#000000" SIZE=3 WIDTH="75%">
+            <FONT FACE="Trebuchet MS">
+            Poets need music!  Please check the links on the <A HREF="http://www.litkicks.com/party.html">24 HOUR POETRY PARTY FRONT PAGE</A> for music downloads to keep you company as you write.  We are featuring the work of DJ Spooky along with a couple of other selected cuts.  These downloads will only be available during the 24 hour event.  
+            </FONT>
+          </TD>
+        </TR>
+      </TABLE>
+   </TD>
+  </TR>
+</TABLE>
+
+<BR>
+<FONT FACE="helvetica, arial" SIZE="-1">
+<a href="http://www.litkicks.com/24pp/Party.html">24 HOUR POETRY PARTY</a> is a <a href="http://www.litkicks.com">LitKicks</a> Production.
+</FONT>
+
+</CENTER>
+
+</BODY>
+</HTML>

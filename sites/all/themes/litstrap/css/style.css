@@ -1,0 +1,662 @@
+/**************************************************/
+/* custom CSS for literary kicks litmega drupal 7 */
+/**************************************************/
+
+/* sitewide styles */
+
+body {
+   font-size: 19px;
+   font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+   line-height: 135%;
+   background-color: #ffffff;
+}
+
+.lkmain {
+  padding-top: 6px;
+}
+
+.node-story {
+  padding: 0px 10px 0px 10px;
+  line-height: 1.6em;
+}
+
+.content center {
+  margin-bottom: 15px;
+}
+
+.view-lkfront center {
+  margin-bottom: 15px;
+}
+
+.content p {
+  margin-bottom: 25px;
+}
+
+blockquote {
+  background-color: #d3d3d3;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  font-size: 19px;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 135%;
+}
+
+blockquote p {
+  font-size: 19px;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 135%;
+}
+
+.lkheader {
+  padding-bottom: 0px;
+}
+
+@media(min-width:992px) {
+  .lkheader {
+    padding-bottom: 12px;
+  }
+}
+
+.lksideleft {
+  padding: 0px;
+}
+
+.lksideleft .well {
+  border-width: 0px;
+}
+
+.lkcore {
+  padding: 0px;
+  margin: 0px;
+}
+
+.lkcore-inner {
+  padding: 0px 12px 0px 12px;
+}
+
+/* THIS WIDTH 100% STYLE SHOULD BE APPLIED VIA A SELECTOR like "lkstoryimg". ONCE THE SELECTOR IS ADDED TO THE ENTIRE
+ * CONTENT SITE, CHANGE THIS TO APPLY STYLE VIA SELECTOR AND REMOVE HACK BELOW */
+
+.lkcore-inner img {
+  width: 100%;
+}
+
+/* THIS IS A CSS HACK FOR AMAZON LINKS, WHICH ARE ALWAYS WRAPPED IN I TAGS AND SHOULD BE WIDTH=1
+ * a better way to solve this problem is to apply a style tag to all lkcore-inner imgs. If that is done,
+ * this can be removed */
+
+.lkcore-inner i img {
+  width: 1px;
+}
+
+@media(min-width:480px) {
+  padding: 0px 0px 0px 0px;
+}
+
+@media(min-width:768px) {
+  .lkcore-inner {
+     min-width: 510px;
+  }
+}
+
+/* left sidebar styles */
+
+.article-by-line,
+.article-by-line a {
+   margin-top: 5px;
+   margin-bottom: 20px;
+   font-style: italic;
+   font-size: 20px;
+}
+
+
+
+.region-sidebar-first {
+  padding: 0px;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  display: table-cell;
+  width: 100%;
+}
+
+.block-search {
+  padding-bottom: 12px;
+  max-width: 160px;
+}
+
+.form-search input {
+  border-radius: 12px;
+}
+
+.form-search button {
+  border-radius: 12px;
+}
+
+form#search-block-form {
+  width: 160px;
+}
+
+/* taxonomy term display for articles */
+
+.topicbox, .topicbox a, .topicbox a:link,
+.topicbox a:visited, .topicbox a:active {
+  padding: 4px;
+  margin: 0px 2px 0px 2px;
+  color: #ffffff;
+  background-color: #000000;
+  font-family: Verdana, Georgia, serif;
+  font-variant: small-caps;
+  font-size: .9em;
+  line-height: 2em;
+}
+
+/* feature styles for bottom features */
+
+.lkbottomrow {
+  text-align: center;
+}
+
+.lkbottomfeature {
+   color: #000000;
+   width: 500px;
+   margin: 0 auto;
+}
+
+.lkbottomfeature article {
+   padding: 8px;
+   border-radius: 12px;
+   background-color: #50a29a;
+   margin-bottom: 12px;
+}
+
+.lkbottomfeature-title {
+  text-align: center:
+}
+
+.lkbottomfeature-td-img {
+  vertical-align: middle;
+  width: 50%;
+}
+
+.lkbottomfeature-td-words {
+  text-align: left;
+  vertical-align: top;
+  width: 50%;
+}
+
+.lkbottomfeature a,
+.lkbottomfeature a:link,
+.lkbottomfeature a:visited {
+  color: #001010;
+  text-decoration: none;
+}
+
+.lkbottomfeature .navsubmitted {
+   padding-bottom: 10px;
+}
+
+.lkbottomfeature h2 {
+   margin-bottom: 0px;
+   font-family: Trebuchet MS, sans-serif;
+   font-weight: bold;
+   letter-spacing: +1px;
+   font-variant: small-caps;
+}
+
+.lkbottomfeature h2.node-title,
+.lkbottomfeature h2.node-title a {
+   font-family: helvetica, arial, sans-serif;
+   font-size: 25px;
+   line-height: 24px;
+   color: #001f0f;
+   padding: 6px;
+}
+
+.lkbottomfeature .side-by-line,
+.lkbottomfeature .side-by-line a {
+   font-family: tahoma, verdana, sans-serif;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+.lkbottomfeature .readmorethoughts {
+   font-family: Verdana, Georgia, serif;
+   font-weight: bold;
+   font-variant: small-caps;
+}
+
+/* feature styles for right sidebar features */
+
+.lksidefeature img {
+  width: 180px;
+  margin: 0 auto;
+}
+
+.lksidefeature a,
+.lksidefeature a:link,
+.lksidefeature a:visited {
+  color: #001010;
+  text-decoration: none;
+}
+
+.lksidefeature .navsubmitted {
+   padding-bottom: 10px;
+}
+
+.lksidefeature h2 {
+   margin-bottom: 0px;
+   font-family: Trebuchet MS, sans-serif;
+   font-weight: bold;
+   letter-spacing: +1px;
+   font-variant: small-caps;
+}
+
+.lksidefeature {
+   color: #000000;
+   float: right;
+   width: 232px;
+   margin-left: 6px;
+   margin-right: 0px;
+}
+
+.lksidefeature article {
+   width: 220px;
+   float: right;
+   padding: 6px;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-bottom: 14px;
+   border-radius: 12px;
+}
+
+.lksidefeature .block {
+   padding: 0px;
+}
+
+.lksidefeature .readmorethoughts {
+   font-family: Verdana, Georgia, serif;
+   font-weight: bold;
+   font-variant: small-caps;
+}
+
+.lksidefeature .views-row-1 article .fb-side {
+   background-color: #ffff00;
+}
+
+.lksidefeature .views-row-1 article,
+.lksidefeature .views-row-4 article,
+.lksidefeature .views-row-7 article,
+.lksidefeature .views-row-10 article,
+.lksidefeature .views-row-13 article {
+   background-color: #70c2ba;
+}
+
+.lksidefeature .views-row-2 article,
+.lksidefeature .views-row-5 article,
+.lksidefeature .views-row-8 article,
+.lksidefeature .views-row-11 article,
+.lksidefeature .views-row-14 article {
+   background-color: #9abfa8;
+}
+
+.lksidefeature .views-row-3 article,
+.lksidefeature .views-row-6 article,
+.lksidefeature .views-row-9 article,
+.lksidefeature .views-row-12 article,
+.lksidefeature .views-row-15 article {
+   background-color: #c2cfa8;
+}
+
+.lksidefeature .lkselect-row-1 article,
+.lksidefeature .lkselect-row-4 article,
+.lksidefeature .lkselect-row-7 article,
+.lksidefeature .lkselect-row-10 article,
+.lksidefeature .lkselect-row-13 article {
+   background-color: #70c2ba;
+}
+
+.lksidefeature .lkselect-row-2 article,
+.lksidefeature .lkselect-row-5 article,
+.lksidefeature .lkselect-row-8 article,
+.lksidefeature .lkselect-row-11 article,
+.lksidefeature .lkselect-row-14 article {
+   background-color: #9abfa8;
+}
+
+.lksidefeature .lkselect-row-3 article,
+.lksidefeature .lkselect-row-6 article,
+.lksidefeature .lkselect-row-9 article,
+.lksidefeature .lkselect-row-12 article,
+.lksidefeature .lkselect-row-15 article {
+   background-color: #c2cfa8;
+}
+
+.lksidefeature .lkselect-fb-row-1 article,
+.lksidefeature .lkselect-fb-row-5 article,
+.lksidefeature .lkselect-fb-row-9 article,
+.lksidefeature .lkselect-fb-row-13 article {
+   font-family: tahoma, verdana, sans-serif;
+   background-color: #82e2e2;
+   border: 2px solid #5f6f8f;
+}
+
+.lksidefeature .lkselect-fb-row-2 article,
+.lksidefeature .lkselect-fb-row-4 article,
+.lksidefeature .lkselect-fb-row-6 article,
+.lksidefeature .lkselect-fb-row-8 article,
+.lksidefeature .lkselect-fb-row-10 article,
+.lksidefeature .lkselect-fb-row-12 article,
+.lksidefeature .lkselect-fb-row-14 article,
+.lksidefeature .lkselect-fb-row-16 article {
+   font-family: tahoma, verdana, sans-serif;
+   background-color: #a2e2d2;
+   border: 2px solid #5f6f8f;
+}
+
+.lksidefeature .lkselect-fb-row-3 article,
+.lksidefeature .lkselect-fb-row-7 article,
+.lksidefeature .lkselect-fb-row-11 article,
+.lksidefeature .lkselect-fb-row-15 article {
+   font-family: tahoma, verdana, sans-serif;
+   background-color: #a2d2e2;
+   border: 2px solid #5f6f8f;
+}
+
+.lksidefeature .lkselect-fb-row,
+.lksidefeature .lkselect-fb-row a {
+   font-family: tahoma, verdana, sans-serif;
+   font-size: 16px;
+   line-height: 16px;
+}
+
+.lksidefeature h2.node-title,
+.lksidefeature h2.node-title a {
+   font-family: helvetica, arial, sans-serif;
+   font-size: 25px;
+   line-height: 24px;
+   color: #001f0f;
+   padding: 6px;
+}
+
+.lksidefeature .commentfeed {
+   font-family: tahoma, verdana, sans-serif;
+   background-color: #32a252;
+   border: 2px solid #2f2f2f;
+   padding: 6px;
+}
+
+.lksidefeature .apfeed {
+   font-family: tahoma, verdana, sans-serif;
+   background-color: #52b272;
+   border: 2px solid #2f3f8f;
+   padding: 6px;
+}
+
+.lksidefeature .storyimage {
+  width: 100%;
+  padding-left: 12px;
+  padding-bottom: 8px;
+}
+
+.lksidefeature img {
+  width: 180px;
+  margin: 0 auto;
+}
+
+.fbitem-title {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.lksidefeature .lkselect-fb-row img {
+  width: 150px;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+.lksidefeature .side-by-line,
+.lksidefeature .side-by-line a {
+   font-family: tahoma, verdana, sans-serif;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+.lksidefeature .lkselect-fb-row .fb-side-by-line {
+   font-family: tahoma, verdana;
+   font-size: 11px;
+   font-color: #0f2f3f;
+   padding-top: 5px;
+   padding-bottom: 0px;
+   text-align: center;
+}
+
+.lksidefeature .lkselect-fb-row .fb-side-by-line a {
+   font-family: tahoma, verdana;
+   font-size: 11px;
+   font-color: #001f2f;
+   padding-top: 5px;
+   padding-bottom: 0px;
+   text-align: center;
+}
+
+.lksidefeature .side-tax-line,
+.lksidefeature .side-tax-line a {
+   padding-top: 5px;
+   padding-bottom: 15px;
+   font-family: Verdana, Georgia, serif;
+   font-variant: small-caps;
+   line-height: .83em;
+}
+
+.lkborder {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: blue;
+}
+
+.lkheadline {
+  font-family: Quicksand, helvetica, arial, sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+  color: black;
+  margin-bottom: 14px;
+}
+
+@media(min-width:768px) {
+  .lkheadline {
+    font-size: 43px;
+    margin-bottom: 20px;
+  }
+}
+
+.lkheadline a,
+.lkheadline a:link,
+.lkheadline a:visited,
+.lkheadline a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.lkheadline a:hover {
+  text-decoration: none;
+  color: green;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #504080;
+}
+
+a:hover {
+  text-decoration: none;
+  color: green;
+}
+
+/* header styles */
+
+.lksitetitle {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  color: #002f2f;
+  text-decoration: none;
+}
+
+a.lksitetitle,
+a.lksitetitle:link,
+a.lksitetitle:visited,
+a.lksitetitle:hover,
+a.lksitetitle:active {
+  color: #002f2f;
+}
+
+.lksitetitle-narrow {
+  font-size: 1.8em;
+  padding-left: 12px;
+}
+
+.lksitetitle-wide {
+  font-size: 2.7em;
+  padding-left: 12px;
+}
+
+.lkwidetoplinks {
+  width: 100%;
+  padding-top: 0px;
+}
+
+.lkwidetoplinks-td {
+  padding-top: 0px;
+  text-align: right;
+  vertical-align: top;
+}
+
+.wide-topline {
+  padding: 10px;
+}
+
+.branding-links {
+  text-align: right;
+}
+
+.title-table-row {
+  height: 40px;
+}
+
+.branding-linkbox {
+  font-size: 13px;
+  font-family: verdana, georgia, serif;
+  font-variant: small-caps;
+  margin-left: 8px;
+}
+
+.branding-links a {
+  color: #000000;
+}
+
+.lktable-narrow {
+  width: 100%;
+  height: 142px;
+  padding-bottom: 12px;
+}
+
+.lktable-wide {
+  width: 100%;
+  height: 142px;
+  padding-bottom: 12px;
+}
+
+.logo img {
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+}
+
+.lklogo-narrow {
+  width: 200px;
+}
+
+.lklogo-wide {
+  width: 240px;
+}
+
+.lksitetitle-td-narrow {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.lksitetitle-td-wide {
+  padding-top: 20px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.lkmenubars {
+  text-align: right;
+  vertical-align: top;
+}
+
+/* comment styles */
+
+div#commentintro {
+   padding-top: 18px;
+}
+
+div#comments h1, div#comments h2 {
+   font-family: helvetica, arial, sans-serif;
+}
+
+div#comments article {
+   border-radius: 12px;
+   border-style: solid;
+   border-width: 1px;
+   border-color: black;
+   padding: 2px 15px 2px 15px;
+   margin: 0 auto;
+   margin-top: 18px;
+   margin-bottom: 18px;
+}
+
+.comment-submitted {
+   font-weight: bold;
+   font-size: 1.1em;
+   font-style: italic;
+   margin-bottom: 16px;
+   margin-left: 0px;
+   padding-left: 0px;
+}
+
+#commentintro, #commentintro a,
+.front-readmore, .front-readmore a {
+   font-family: Verdana, Georgia, serif;
+   font-weight: bold;
+   font-variant: small-caps;
+}
+
+#commentintro, #commentintro a {
+   font-size: 1.2em;
+}
+
+.front-readmore, .front-readmore a {
+   float: right;
+   padding: 12px 0px 6px 0px;
+}
+
+.front-separator {
+  clear: both;
+  padding: 6px 0px 12px 0px;
+  text-align: center;
+}
+
+#footerlinks {
+  font-family: Quicksand, helvetica, arial, sans-serif;
+  font-size: 1em;
+}

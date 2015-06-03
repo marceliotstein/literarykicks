@@ -1,0 +1,285 @@
+<?php
+//
+// facebook page integration for litkicks
+//
+// to get access token: 
+// https://graph.facebook.com/oauth/authorize?type=user_agent&client_id=443851599038373&redirect_uri=http%3A%2F%2Fwww.litkicks.com&scope=read_stream,offline_access
+//
+//
+
+function lkfacebookfeed_menu() {
+  $items['facebookfeed'] = array(
+   'page callback' => 'fb_feed',
+   'access arguments' => array('access content'),
+  );
+  return $items;
+}
+
+function lkfacebookfeed_block_view($delta = '') {
+  global $user;
+  switch($delta) {
+    case 'lkfacebookfeed':
+
+      $block['subject'] = "";
+      $blockcontent = "";
+      if (user_access('access content')) {
+        $sourcepath = request_path();
+
+        // use cached data if available
+        $cid = "facebookfeed:" . $sourcepath;
+        if ($cached = cache_get($cid,'cache')) {
+           $blockcontent = $cached->data;
+           $block['content'] = $blockcontent;
+           return $block;
+        }
+
+        $result = lkfacebookfeed_nodes();     
+        $items = array();
+
+        $rownum = 0;
+        foreach ($result as $nodedata) {
+          $rownum++;
+          $nid = $nodedata->nid;
+          $thisnode = node_load($nid);
+          $vid = $nodedata->vid;
+    
+          $fbtgtlink = null;
+          if (!empty($thisnode->field_target_link)) {
+            $fbtgt = $thisnode->field_target_link['und'][0]['value'];
+            $fbtgtlink = "<a href=\"" . $fbtgt . "\">Link</a>";
+          }
+
+          $date = format_date($nodedata->created);
+
+          $title = l($nodedata->title, 'node/' . $nid);
+
+          $nodepath = "/" . drupal_get_path_alias('node/' . $nid);
+          $result = db_query("select body_summary from field_revision_body where entity_id = " . $nid . " and revision_id = " . $vid);
+          foreach ($result as $row) {
+             $fullbody = $row->body_summary;
+             $bodysplit = explode("<!--break-->",$fullbody);
+             $body = $bodysplit[0];
+          } 
+
+          $story_image = "";
+          if (!empty($thisnode->field_little_picture)) {
+             $story_image = "<center>" . $thisnode->field_little_picture['und'][0]['value'] . "</center>";
+          }
+
+          $blockcontent .= "<div class=\"lkselect-fb-row lkselect-fb-row-" . $rownum . "\">";
+          $blockcontent .= "<article>";
+          $blockcontent .= "<h2 class=\"node-title\">" . $title . "</h2>";
+
+          $blockcontent .= "<div class=\"body\">" . $body . "</div><br />";
+          $blockcontent .= "<div class=\"story-image\">" . $story_image . "</div><br />";
+          if (!empty($fbtgtlink)) {
+             $blockcontent .= "<div class=\"fb-side-by-line\">" . $fbtgtlink . " from <a href=\"http://facebook.com/litkicks\">Litkicks Facebook</a></div>";
+          } else {
+             $blockcontent .= "<div class=\"fb-side-by-line\">From <a href=\"http://facebook.com/litkicks\">Litkicks Facebook</a></div>";
+          }
+
+          $blockcontent .= "</article>";
+          $blockcontent .= "</div>";
+
+        }
+
+        // write data to cache 
+       
+        if ($user->uid==0) {
+           $expire = time() + (60 * 360); // cache for six hours
+         /////cache_set($cid, $blockcontent, 'cache', $expire);
+        }
+
+        $block['content'] = $blockcontent;
+      }
+      return $block;
+  }
+}
+
+// retrieve current facebook feed nodes 
+
+function lkfacebookfeed_nodes() {
+  $query = "select n.nid, n.vid, n.title, n.created from node n
+            where n.type = 'fbitem'
+            and n.status = 1
+            group by n.nid, n.vid, n.title, n.created
+            order by n.created desc
+            limit 10";
+  //print "<!--" . $query . "-->";
+  $result = db_query($query);
+  return $result;  
+}
+
+// block info
+
+function lkfacebookfeed_block_info() {
+  $blocks['lkfacebookfeed'] = array(
+    'info' => t('Facebook Feed Selection'), //The name that will appear in the block list.
+    'cache' => DRUPAL_NO_CACHE, //Default
+  );
+  return $blocks;
+}
+
+function string_excerpt($string, $count){
+  $words = explode(' ', $string);
+  if (count($words) > $count) {
+    $words = array_slice($words, 0, $count);
+    $string = implode(' ', $words);
+  }
+  return $string;
+}
+
+function fb_feed() {
+  $fieldslist = "id,name,posts";
+
+  // if mode = create, nodes will be created from feed
+
+  //$mode = "test";
+  $mode = "create";
+
+  $imgfiledir = "/home4/wwbdevor/public_html/lkdrup7/sites/default/files/fbfiles/";
+  $imgfilepath = "/sites/default/files/fbfiles/";
+
+  $lk_fbid = "167903960011362";
+
+
+  $lk_accesstoken = "CAACEdEose0cBALc6uLZCDDTs3HMSrhnJHuoiO9QBCh2dk6MIl2ZCDl138l3vYGeBBB7Br8BF4BFHRXOPs09GSZBhHea983gUfUZA5X8ZBdYctIFfAvSkNHPdYKg2B6A47nPPXTzjU4sWkCSmMGyzYLXHQbXvVouIZD";
+
+  $lk_url = "https://graph.facebook.com/" . $lk_fbid . "?fields=" . $fieldslist . "&access_token=" . $lk_accesstoken;
+  $request = drupal_http_request($lk_url);
+
+  $fbdata = drupal_json_decode($request->data);
+  //print_r($fbdata);
+
+  $ret = "GRAPH API TEST<br />";
+  $ret .= "Your Facebook ID is " . $fbdata['id'] . "<br />";
+  $ret .= "Your Facebook Name is " . $fbdata['name'] . "<br />";
+  $postdata = $fbdata['posts']['data']; 
+  $postcount = 0;
+  foreach ($postdata as $thispost) {
+    $type = $thispost['type'];
+    $post_id = (string) $thispost['id'];
+
+    if ($type=="link") {
+      $ret .= "<br />***LINK***</br />";
+      //print_r($thispost);
+
+      $picsrc = "";
+      if (!empty($thispost['picture'])) {
+        $picture = $thispost['picture'];
+        $picsrc .= "<img src=\"" . $picture . "\" />";
+
+        // facebook item target link is optional
+        $targetlink = null;
+        if (!empty($thispost['link'])) {
+           $targetlink = $thispost['link'];
+print "TARGET LINK IS " . $targetlink;
+        }
+ 
+        // try to get original (non-FB) image
+        $picsrcexp = explode("url=",$picture);
+        if (isset($picsrcexp[1])) {
+           $bigpic0 = $picsrcexp[1];
+           $bigpic1 = str_replace("%3A",":",$bigpic0);
+           $bigpic2 = str_replace("%2F","/",$bigpic1);
+
+           // copy big image to fbfiles directory
+
+           $imgdest = $imgfiledir . $post_id . ".jpg";
+           $imgpath = $imgfilepath . $post_id . ".jpg";
+           //print "BIGPIC IS " . $bigpic2 . " " . $imgdest . "<br />";
+           $ch = curl_init($bigpic2);
+           $fp = fopen($imgdest, 'wb');
+           curl_setopt($ch, CURLOPT_FILE, $fp);
+           curl_setopt($ch, CURLOPT_HEADER, 0);
+           curl_exec($ch);
+           curl_close($ch);
+           fclose($fp);
+
+           $bigpicsrc = "<img width=\"350\" src=\"" . $imgpath . "\" />";
+           $littlepicsrc = "<img width=\"100\" src=\"" . $imgpath . "\" />";
+        } else {
+           $littlepicsrc = "No original image found";
+           $bigpicsrc = "No original image found";
+        }
+      }
+
+      $message = "";
+      $message_title = "";
+      if (!empty($thispost['message'])) {
+        $message = $thispost['message'];
+        $message_title0 = string_excerpt($message,12);
+        $message_titleexp = explode("http",$message_title0);
+        $message_title = $message_titleexp[0] . " ...";
+      }
+
+      if ((!empty($message_title)) &&
+          (!empty($post_id))) {
+        $ret .= "<b>" . $message_title . "</b><br />" . $message . "<br />" . $post_id . "<br />" . $picsrc . "<br />" . $bigpicsrc . "<br />";
+ 
+        // is there already an existing node with this facebook post id?
+
+        $fbid_found = false;
+        $fbid_query = new EntityFieldQuery;
+        $fbid_result = $fbid_query
+           ->entityCondition('entity_type', 'node')
+           ->fieldCondition('field_facebook_post_id', 'value', $post_id, '=')
+           ->execute();
+        if (isset($fbid_result['node'])) {
+           $fbid_found = true;
+           print "POST ID " . $post_id . " FOUND<br />";
+        } else {
+           print "POST ID " . $post_id . " NOT FOUND<br />";
+        }
+        $newpath = 'fb' . $post_id;
+
+        $newnode = new stdClass();
+        $newnode->type = "fbitem";
+        $newnode->title = $message_title;      
+        $newnode->language = LANGUAGE_NONE;
+        $newnode->status = 0; /* not published */
+        $newnode->promote = 0; /* not promoted */
+        $newnode->comments = 0; /* no comments */
+        $newnode->uid = 3; /* uid 3 = Levi Asher */
+        $newnode->path = array('alias' => $newpath);
+
+        $newnode->body[LANGUAGE_NONE][0]['value']  = $message;      
+        $newnode->body[LANGUAGE_NONE][0]['summary']  = $message;      
+        $newnode->body[LANGUAGE_NONE][0]['format']  = 1; /* 1 = filtered html */      
+
+        $newnode->field_facebook_post_id[LANGUAGE_NONE][0]['value'] = $post_id;
+        $newnode->field_target_link[LANGUAGE_NONE][0]['value'] = $targetlink;
+        $newnode->field_little_picture[LANGUAGE_NONE][0]['value'] = $littlepicsrc;
+        $newnode->field_big_picture[LANGUAGE_NONE][0]['value'] = $bigpicsrc;
+        //print_r($newnode);
+
+        if (($fbid_found==false) && ($mode=="create")) {
+          $newnode = node_submit($newnode);
+          node_save($newnode);
+        }
+      }
+    }
+  
+    if (!empty($thispost['likes'])) {
+      $likes = $thispost['likes']['data'];
+      foreach ($likes as $thislike) {
+        $ret .= " --> LIKED BY " . $thislike['name'] . "<br />"; 
+      }
+    }
+
+    if ((!empty($thispost['comments'])) && (!empty($thispost['comments']['data']))) {
+      $comments = $thispost['comments']['data'];
+      foreach ($comments as $thiscomment) {
+        $commentname = $thiscomment['from']['name'];
+        $commentmsg = $thiscomment['message'];
+        $ret .= " --> COMMENT BY " . $commentname . ": " . $commentmsg . "<br />"; 
+      }
+    }
+    
+    $postcount++;
+    if ($postcount>10) {
+      break;
+    }
+  }
+  return($ret);
+}

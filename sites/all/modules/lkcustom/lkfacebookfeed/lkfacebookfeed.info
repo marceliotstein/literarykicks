@@ -1,0 +1,4 @@
+name = LK Facebook Feed
+description = Import nodes from Litkicks Facebook page
+core = 7.x
+package = Litkicks

@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://api.theweek.com/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="dns-prefetch" href="//api.theweek.com" />
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Access denied | The Week CMS</title>
+  <link type="text/css" rel="stylesheet" href="http://api.theweek.com/sites/default/files/cdn/css/http/css_bMtIC6upfQGE_GeHlhx1VlhWBchnp9H34MHRHrELO2U.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://api.theweek.com/sites/default/files/cdn/css/http/css_VOKN-QSVLkneVFLMwVDSUGpejq52SY2TFVa0-hj1SBg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://api.theweek.com/sites/default/files/cdn/css/http/css_HghfRgg3wjxI_UXkVWOqhnUd82fhzY77e3xr7ht4Z3w.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://api.theweek.com/sites/default/files/cdn/css/http/css_Lf_H2-tZsaRY2c4lDc_47Zt4E6aZjBLctlQW0GF7JcA.css" media="screen" />
+
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="http://api.theweek.com/sites/default/files/cdn/css/http/css_JON-ZBVrMdkB17Lmr0Kr4ZJnK4M5DLrWz8ri0FjFFHo_ie.css.css" media="all" />
+<![endif]-->
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="http://api.theweek.com/sites/default/files/cdn/css/http/css_rYF4nvgd6_5Zqe4lt5E-B99VAdgB2nuAlSKEF3VtJcU_ie7.css.css" media="all" />
+<![endif]-->
+
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" href="http://api.theweek.com/sites/default/files/cdn/css/http/css_vi3nzvogmgVh5I4Jq3YLxPPC6wcaofKh9AafeFRzpqs_ie6.css.css" media="all" />
+<![endif]-->
+  <script type="text/javascript" src="http://api.theweek.com/sites/all/modules/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="http://api.theweek.com/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://api.theweek.com/misc/drupal.js?npby32"></script>
+<script type="text/javascript" src="http://api.theweek.com/sites/all/modules/admin_menu/admin_devel/admin_devel.js?npby32"></script>
+<script type="text/javascript" src="http://api.theweek.com/sites/all/modules/tw_admin/js/jquery-migrate-1.2.1.js?npby32"></script>
+<script type="text/javascript" src="http://api.theweek.com/sites/all/modules/tw_admin/js/tw-admin.js?npby32"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"seven","theme_token":"_e9qdTMDHXRYxjoqNWEjdHN1ZOswh-HZJzYWca2PkFk","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/admin_menu\/admin_devel\/admin_devel.js":1,"sites\/all\/modules\/tw_admin\/js\/jquery-migrate-1.2.1.js":1,"sites\/all\/modules\/tw_admin\/js\/tw-admin.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/tw_admin\/css\/tw_admin.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"themes\/seven\/reset.css":1,"themes\/seven\/style.css":1,"themes\/seven\/ie.css":1,"themes\/seven\/ie7.css":1,"themes\/seven\/ie6.css":1}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-sites page-sites-default page-sites-default-files page-sites-default-files-styles page-sites-default-files-styles-tw-image-6-4 page-sites-default-files-styles-tw-image-6-4-public page-sites-default-files-styles-tw-image-6-4-public-cf-gx2nwyaabpqwjpgitokm6pbrth4cfs1sx104sy0sw560sh560" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    
+  <div id="branding" class="clearfix">
+    <h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/">Home</a></div>              <h1 class="page-title">Access denied</h1>
+              </div>
+
+  <div id="page">
+          <div class="tabs-secondary clearfix"></div>
+    
+    <div id="content" class="clearfix">
+      <div class="element-invisible"><a id="main-content"></a></div>
+                          <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    You are not authorized to access this page.  </div>
+</div>
+<div id="block-user-login" class="block block-user">
+
+    <h2>User login</h2>
+  
+  <div class="content">
+    <form action="/sites/default/files/styles/tw_image_6_4/public/CF-gx2nWYAAbPQW.jpg%3Fitok%3DM6pbRth4%26cfs%3D1%26sx%3D104%26sy%3D0%26sw%3D560%26sh%3D560?destination=sites/default/files/styles/tw_image_6_4/public/CF-gx2nWYAAbPQW.jpg%3Fitok%3DM6pbRth4%26cfs%3D1%26sx%3D104%26sy%3D0%26sw%3D560%26sh%3D560" method="post" id="user-login-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required" />
+</div>
+<div class="form-item form-type-password form-item-pass">
+  <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" id="edit-pass" name="pass" size="15" maxlength="128" class="form-text required" />
+</div>
+<div class="item-list"><ul><li class="first"><a href="/user/register" title="Create a new user account.">Create new account</a></li>
+<li class="last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" value="form-ZTZdSgTVHzKNmNYI96pHd-wczEXzvTxh0yBxAodI0w0" />
+<input type="hidden" name="form_id" value="user_login_block" />
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Log in" class="form-submit" /></div></div></form>  </div>
+</div>
+  </div>
+    </div>
+
+    <div id="footer">
+          </div>
+
+  </div>
+  </body>
+</html>

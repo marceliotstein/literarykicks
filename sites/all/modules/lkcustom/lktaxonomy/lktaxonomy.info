@@ -1,0 +1,4 @@
+name = LK Taxonomy
+description = Featured articles for nodes based on taxonomy
+package = Litkicks
+core = 7.x

@@ -1,0 +1,58 @@
+<?php 
+  //
+  // custom display for either sidebar or main content display of FBItem node (Facebook feed)
+  //
+  ?>
+
+  <article<?php print $attributes; ?>>
+
+     <?php if (!$page && $title): ?>
+     <header>
+         <h2<?php print $title_attributes; ?>><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
+     </header>
+     <?php endif; ?>
+
+     <?php 
+     if (!$teaser) {
+        // this is the main article byline display
+        ?>
+        <footer class="submitted">From <i><a href="http://facebook.com/litkicks">Litkicks on Facebook</a></i> on <?php print $date; ?></footer>
+        <?php
+     } 
+     $fbtgt = null;
+     $fbimg = $node->field_big_picture['und'][0]['value'];
+     if (!empty($node->field_target_link)) {
+        $fbtgt = $node->field_target_link['und'][0]['value'];
+        $fbtgtimg = "<center><a href=\"" . $fbtgt . "\">" .  $fbimg . "</a></center>";
+     } else {
+        $fbtgtimg = "<center>" .  $fbimg . "</center>";
+     }
+     ?>
+  
+     <div<?php print $content_attributes; ?>>
+       <?php
+         hide($content['comments']);
+         hide($content['links']);
+         hide($content['field_big_picture']);
+         hide($content['field_little_picture']);
+         hide($content['field_facebook_post_id']);
+         hide($content['field_target_link']);
+         print_r($fbtgtimg);
+         print render($content);
+       ?>
+       <center><div id="fb-apres" width="500">
+       <?php
+       if ($fbtgt!=null) {
+          ?>
+          <b><a href="<?php print $fbtgt ?>">Visit site</a></b><br /><br />
+          <?php
+       }
+       ?>
+       <hr width="100%" height="3px" noshade color="#000000">
+       <i>This is a status update from the <a href="http://facebook.com/litkicks">Litkicks Facebook</a> page.<br /><b><a href="http://facebook.com/litkicks">Like us</a></b> to see these updates every day on Facebook.</i><br /><br />
+       <hr width="100%" height="3px" noshade color="#000000">
+       </div>
+       </center>
+     </div>
+  
+   </article>

@@ -1,0 +1,233 @@
+
+
+  	
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="imagetoolbar" content="no" />
+<title>Newsday - Page not found</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="verify-v1" content="xhLtCNM+ppjKVHNGLC5mWMy2A/C6+hBDzkhZn6BLhTE=" />
+<link href="/build/third_party_header.min.css" rel="stylesheet" type="text/css" />
+<link href="/build/newsday_error.min.css" rel="stylesheet" type="text/css" />
+<link href="/build/third_party_footer.min.css" rel="stylesheet" type="text/css" />
+<!--[if !IE]><link media="only screen and (max-device-width: 1024px)" href="/css/newsday/device.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if IE 7]><link href="/build/newsday_all_ie.min.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if IE 8]><link href="/build/newsday_ie8.min.css" rel="stylesheet" type="text/css" /><![endif]-->
+<script src="/js/libs/modernizr.js"></script>
+</head>
+<body>
+<div id="wrapper" class="thirdParty">
+	<div id="topToolbar">
+		<div class="inner">
+			<div class="left">
+		  		<div class="fly"><a href="/onlineaccess">Subscribe <i class="fa fa-angle-right"></i></a></div>
+		  	</div>
+		  	<div class="right">
+				<a href="http://traffic.newsday.com">Traffic</a>  <a id="weatherLocation" href="http://weather.newsday.com">Weather</a>
+			</div>
+		</div>
+	</div>
+  	<header id="slimHead" class="fixedsticky">
+	<div class="container"> 
+	    <a href="/" name="name" id="logo"><img src="/img/response/newsday-logo.png"></a>
+	    <div class="nav"> </div>
+ 	</div>
+  	</header>
+ </div>
+ <div id="header" class="active thirdHeader">
+   <div class="inner">
+   		<div id="nav">
+			<ul>
+  				<li id='navLi'><a href='/long-island'>Long Island</a></li>
+   				<li id='navSports'><a href='/sports'>Sports</a></li>
+   				<li id='navEnt'><a href='/entertainment'>Entertainment</a></li>
+   				<li id='navLifeStyle'><a href='http://www.newsday.com/explore-long-island'>ExploreLI</a></li>
+   				<li id='navNews'><a href='/news/nation'>News</a></li>
+  				<li id='navBusiness'><a href='/business'>Business</a></li>
+   				<li id='navNews'><a href='/opinion'>Opinion</a></li>
+   				<li><a class="classifiedLink" href='/classifieds/jobs'>Jobs</a></li>
+   				<li><a class="classifiedLink" href='/classifieds/cars'>Cars</a></li>
+   				<li><a class="classifiedLink" href='/classifieds/real-estate'>Homes</a></li>
+   				<li class="last"><a class="classifiedLink" href='/classifieds'>Classifieds</a></li>
+			</ul>
+		</div>
+    </div>
+</div>
+<div id="bodyContainer">
+    <div id="main">
+      <div id="primary">
+        <h1>The page you requested cannot be found.</h1>
+        <p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+        <p><strong>Please try the following:</strong></p>
+        <ul>
+          <li>If you typed the page address in the Address bar, make sure that it is spelled correctly.</li>
+          <li>Open the <a href="http://www.newsday.com">www.newsday.com</a> home page and look for links to the information you want.</li>
+          <li>Use the navigation bar on the top to find the link you are looking for.</li>
+          <li>Click the Back button to try another link.</li>
+          <li>Enter a term in the search form above to look for information on newsday sites or the Internet.</li>
+          <li>Please <a href="mailto:web@newsday.com">contact us</a> to report a bad link or technical issue.</li>
+        </ul>
+        <div style="display: none;">File not found: /httpImage/image.JPG_gen/derivatives/display_600/image.JPG&cfs=1&sx=70&sy=0&sw=400&sh=400</div>
+      </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="footerInner">
+        <ul class="serv">
+            <h3>Services</h3>
+            <li><a href="http://www.newsday.com/onlineaccess/"><i class="fa fa-chevron-right"></i> Subscribe</a></li>   
+            <li><a href="http://www.newsday.com/mmn"><i class="fa fa-gear"></i> Manage my Newsday</a></li>
+            <li><a href="http://www.newsday.com/eedition"><i class="fa fa-file"></i> Today's paper</a></li>
+            <li><a href="http://www.facebook.com/Newsday"><i class="fa fa-facebook"></i> Join us on Facebook</a></li>
+            <li><a href="http://www.newsday.com/twitter"><i class="fa fa-twitter"></i> Join us on Twitter </a></li>
+            <li><a href="http://www.newsday.com/newsletters"><i class="fa fa-file-text"></i> Sign up for newsletters</a></li>
+            <li><a href="http://www.newsday.com/getapps"><i class="fa fa-tablet"></i> Get our Apps</a></li>
+            <li><a href="http://www.newsday.com/getmobile"><i class="fa fa-mobile"></i> Newsday mobile</a></li>
+        </ul>
+
+        <ul class="net">
+            <h3>Our Network</h3>  
+            <li><a href="http://www.newsday.com/towns">Long Island Towns</a></li>
+            <li><a href="http://www.amny.com/">am New York</a></li>
+            <li><a href="http://cars.newsday.com">Newsday Cars</a></li>
+            <li><a href="http://www.hometownshopperli.com/">The Hometown Shopper </a></li>
+            <li><a href="http://homes.newsday.com/">Newsday Homes</a></li>
+            <li><a href="http://www.newsday.com/careerbuilder">CareerBuilder</a></li>
+            <li><a href="http://www.news12.com">News 12</a></li>
+            <li><a href="http://www.newsday.com/optimumonline">Optimum</a></li>
+            <li><a href="http://local.newsday.com/">Newsday Connect</a></li>
+            <li><a href="http://www.newsday.com/varsity">MSG Varsity</a></li>
+        </ul>
+
+        <ul class="news">
+            <h3><a href="http://www.newsday.com">News</a></h3>  
+            <li><a href="http://www.newsday.com/long-island">Long Island</a></li>
+            <li><a href="http://www.newsday.com/long-island/nassau">Nassau</a></li>
+            <li><a href="http://www.newsday.com/long-island/suffolk">Suffolk</a></li>
+            <li><a href="http://www.newsday.com/long-island/education">Education</a></li>
+            <li><a href="http://www.newsday.com/long-island/crime">Crime</a></li>
+            <li><a href="http://www.newsday.com/long-island/politics">Politics</a></li>
+            <li><a href="http://www.newsday.com/towns">Towns</a></li>
+            <li><a href="http://www.newsday.com/news/new-york">NYC</a></li>
+            <li><a href="http://www.newsday.com/news/nation">U.S. / World</a></li>
+             <li><a href="http://www.newsday.com/business">Business</a></li>
+             <li><a href="http://www.newsday.com/business/technology">Technology</a></li>
+            <li><a href="http://longisland.newsday.com/newsday/traffic/">Commuting</a></li>
+            <li><a href="http://www.newsday.com/long-island/history">History</a></li>
+            <li><a href="http://www.newsday.com/long-island/data">Data and Maps</a></li>
+            <li><a href="http://www.legacy.com/obituaries/newsday/">Obituaries</a></li>
+        </ul>
+
+        <ul class="sports">
+            <h3><a href="http://www.newsday.com/sports">Sports</a></h3>
+            <li><a href="http://www.newsday.com/sports/footbal/giants">Giants</a></li>
+            <li><a href="http://www.newsday.com/sports/football/yankees">Jets</a></li>
+            <li><a href="http://www.newsday.com/sports/basketball/knicks">Knicks</a></li>
+            <li><a href="http://www.newsday.com/sports/basketball/nets">Nets</a></li>
+            <li><a href="http://www.newsday.com/sports/hockey/islanders">Islanders</a></li>
+            <li><a href="http://www.newsday.com/sports/hockey/rangers">Rangers</a></li>
+            <li><a href="http://www.newsday.com/sports/baseball/yankees">Yankees</a></li>   
+            <li><a href="http://www.newsday.com/sports/baseball/mets">Mets</a></li>
+            <li><a href="http://www.newsday.com/sports/high-school/">High school</a></li>
+            <li><a href="http://www.newsday.com/sports/college">Colleges</a></li>
+            <li><a href="http://www.newsday.com/sports/columnists">Columns</a></li>
+            <li><a href="http://newsday.sportsdirectinc.com/gamematchups.aspx">Scores</a></li>
+            <li><a href="http://www.newsday.com/sports/video">Videos</a></li>
+            <li><a href="http://www.newsday.com/sports/photos">Photos</a></li>
+        </ul>
+
+        <ul class="ent">
+            <h3><a href="http://www.newsday.com/entertainment">Entertainment</a></h3>
+            <li><a href="http://www.newsday.com/entertainment/celebrities">Celebrities</a></li>
+       <li><a href="http://www.newsday.com/entertainment/movies">Movies</a></li>   
+            <li><a href="http://www.newsday.com/entertainment/tv">TV</a></li>
+            <li><a href="http://www.newsday.com/entertainment/music">Music</a></li>
+            <li><a href="http://www.newsday.com/lifestyle/restaurants">Restaurants</a></li>
+            <li><a href="http://www.newsday.com/entertainment/theater">Theater</a></li>
+            <li><a href="http://www.newsday.com/explore-long-island">ExploreLI</a></li>
+            <li><a href="http://www.newsday.com/lifestyle">Lifestyle</a></li>
+            <li><a href="http://www.newsday.com/lifestyle/family">Parenting</a></li>
+            <li><a href="http://www.newsday.com/lifestyle/fashion-and-shopping">Shopping</a></li>
+            <li><a href="http://www.newsday.com/pets">Pets</a></li>
+            <li><a href="http://www.newsday.com/lifestyle/weddings">Weddings</a></li>
+            <li><a href="http://www.newsday.com/travel">Travel</a></li>
+            <li><a href="http://www.newsday.com/entertainment/books">Books</a></li>
+        </ul>
+
+        <ul class="classifieds last">
+            <h3><a href="http://www.newsday.com/classifieds">Classifieds</a></h3>
+            <li><a href="http://www.newsday.com/classifieds/jobs">Jobs</a></li>   
+            <li><a href="http://www.newsday.com/classifieds/cars">Cars</a></li>
+            <li><a href="http://www.newsday.com/classifieds/real-estate">Real Estate</a></li>
+            <li><a href="http://local.newsday.com/">Yellow Pages</a></li>
+            <br>
+            <br>
+            <h3>More</h3>
+            <li><a href="http://www.newsday.com/crossword">Crossword</a></li>
+            <li><a href="http://www.newsday.com/weather">Weather</a></li>
+            <li><a href="http://www.newsday.com/photos">Photos</a></li>
+            <li><a href="http://www.newsday.com/videos">Videos</a></li>
+            <li><a href="http://www.newsday.com/long-island/li-life">LI Life</a></li>
+            <li><a href="http://www.newsday.com/lifestyle/retirement">Act 2</a></li>
+            <li><a href="http://www.newsday.com/news/lottery">Lottery</a></li>
+        </ul>
+          <ul class="btmLinks">
+        <li class="first"><a href="http://www.newsday.com/sitemap">Site Map</a></li>    
+        <li><a href="http://www.newsday.com/privacy">Privacy Policy</a></li>
+        <li><a href="http://www.newsday.com/privacy">Your ad choices</a></li>
+        <li><a href="http://www.newsday.com/terms">Terms of Service</a></li>
+        <li><a href="http://www.newsday.com/homedeliveryterms">Home Delivery Terms</a></li>
+        <li><a href="http://www.newsday.com/contact">Contact Newsday</a></li>
+        <li><a href="http://www.newsday.com/careers">Careers</a></li>
+        <li><a href="http://www.newsdayreprints.com/">Reprints &amp; Permissions</a></li>
+		<li><a href="http://mediakit.newsday.com/">Advertise with Newsday</a></li>
+        <li><a href="http://www.newsday.com/help">Help</a></li>
+            <p class="copyright">Copyright &copy; <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Newsday. All rights reserved.</p>
+    </ul>
+
+    </div>  
+</footer>
+
+<!-- SiteCatalyst -->
+<script src="/js/s_nd_code.js"></script>
+<script><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines_nd. */
+s_nd.pageName="404: " + location.protocol + "//" + location.host + location.pathname;
+s_nd.server="Newsday";
+s_nd.channel="Error Pages";
+s_nd.pageType="errorPage";
+s_nd.prop1="404 - Resource Not Found";
+s_nd.prop31="10.5.144.65"
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s_nd.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+<noscript>
+<a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://newsday.122.2o7.net/b/ss/newsdaydev/1/H.20.3--NS/0"
+height="1" width="1" border="0" alt="" /></a>
+</noscript>
+<!-- End SiteCatalyst -->
+
+<!-- GOOGLE ANALYTICS FOR 404 page -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9393677-10']);
+  _gaq.push(['_setDomainName', 'newsday.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>
+ 

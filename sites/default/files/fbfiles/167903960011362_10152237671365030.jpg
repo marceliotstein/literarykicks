@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Start : Gregor Weichbrodt</title>
+<meta name='keywords' content="Gregor Weichbrodt, Berlin, Potsdam, Portfolio, Arbeiten, Grafik, Illustration, Foto, Animation, Collage, Kommunikation, Kunst, Design, Mediendesign, Webdesign, Printdesign, Grafikdesign, Web, Print, Freelancer" />
+<meta name='description' content="Online Portfolio von Gregor Weichbrodt. Berlin." />
+<meta name='author' content="Gregor Weichbrodt" />
+<meta name='copyright' content="Gregor Weichbrodt" />
+<meta name='Robots' content="INDEX,FOLLOW" />
+<meta name='Revisit-after' content="" />
+<meta name='generator' content="Indexhibit" />
+<link rel='stylesheet' href='http://ggor.de/ndxzsite/default/reset.css?v=2.0' type='text/css' />
+<link rel='stylesheet' href='http://ggor.de/ndxzsite/default/base.css?v=2.0' type='text/css' />
+<link rel='stylesheet' href='http://ggor.de/ndxzsite/default/style.css?v=2.0' type='text/css' />
+
+<script type='text/javascript' src='http://ggor.de/ndxzsite/js/jquery.js?v=2.0'></script>
+<script type='text/javascript' src='http://ggor.de/ndxzsite/js/movement.js?v=2.0'></script>
+
+<script type='text/javascript'>
+$(document).ready(function()
+{
+	move_up(); $('#menu a').bind('click', function(event) { do_click(); });
+});
+</script>
+
+</head>
+<body id='exhibit-1' class='section-1'>
+<div id='index'>
+<div class='container'>
+
+<div class='top'></div>
+<ul class='section active_section' id='section_1'>
+</ul>
+<ul class='section' id='section_2'>
+<li><span id='subsection_title_2_1' class='subsection_title'>2014</span>
+<ul class='subsection'>
+<li id='exhibit_32' class='exhibit_title'><a href='http://ggor.de/index.php/project/on-the-road/'>On the Road</a></li>
+</ul>
+</li>
+<li><span id='subsection_title_2_2' class='subsection_title'>2013</span>
+<ul class='subsection'>
+<li id='exhibit_30' class='exhibit_title'><a href='http://ggor.de/index.php/project/die-revolution/'>Die Revolution</a></li>
+<li id='exhibit_31' class='exhibit_title'><a href='http://ggor.de/index.php/project/anmeldeblatt-fuer-eine-revolution/'>Anmeldeblatt für eine Revolution</a></li>
+<li id='exhibit_27' class='exhibit_title'><a href='http://ggor.de/index.php/project/schlagzeilen-poesie/'>Schlagzeilen-Poesie</a></li>
+<li id='exhibit_26' class='exhibit_title'><a href='http://ggor.de/index.php/project/echolot/'>Echolot</a></li>
+</ul>
+</li>
+<li><span id='subsection_title_2_3' class='subsection_title'>2011</span>
+<ul class='subsection'>
+<li id='exhibit_21' class='exhibit_title'><a href='http://ggor.de/index.php/project/das-ist-der-tag/'>Das ist der Tag, von dem ihr noch euern Enkelkindern erzählen werdet</a></li>
+<li id='exhibit_20' class='exhibit_title'><a href='http://ggor.de/index.php/project/wetterfrosch/'>Wetterfrosch</a></li>
+<li id='exhibit_19' class='exhibit_title'><a href='http://ggor.de/index.php/project/cthulhu/'>Berchtesgaden</a></li>
+</ul>
+</li>
+<li><span id='subsection_title_2_4' class='subsection_title'>2010</span>
+<ul class='subsection'>
+<li id='exhibit_29' class='exhibit_title'><a href='http://ggor.de/index.php/project/der-kleine-ausserirdische/'>Der kleine Außerirdische</a></li>
+<li id='exhibit_18' class='exhibit_title'><a href='http://ggor.de/index.php/project/krishnamurti/'>Krishnamurti</a></li>
+</ul>
+</li>
+</ul>
+<ul class='section' id='section_4'>
+<li id='exhibit_33' class='exhibit_title'><a href='http://ggor.de/index.php/gregor/about/'>About</a></li>
+<li id='exhibit_25' class='exhibit_title'><a href='http://ggor.de/index.php/gregor/kontakt/'>Contact</a></li>
+</ul>
+
+<div class='bot'></div>
+
+
+</div>
+</div>
+
+<div id='exhibit'>
+<div class='container'>
+
+<div class='top'><!-- --></div>
+<!-- text and image -->
+
+<!-- end text and image -->
+
+</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<HTML>
+<HEAD>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+
+<STYLE TYPE="text/css">
+<!--
+
+A:link 			{ color: #B4042E; 
+                          font-weight: bold; 
+                          text-decoration: none; }
+A:active 		{ color: #A6037E; 
+                          font-weight: bold; 
+                          text-decoration: none; }
+A:visited 		{ color: #B4042E; 
+                          font-weight: bold; 
+                          text-decoration: none; } 
+A:hover			{ color: #A6037E; font-weight: bold; 
+                          text-decoration: underline; }
+
+.first                  { 
+                          font-size: 12px;
+                          font-weight: bold;
+                          font-family: verdana, arial, sans-serif;
+                          margin: 4px;
+                          border: 1px solid black; 
+                          background-color: #D3E6EA; 
+                          padding: 6px;
+                        }
+
+.second                 { 
+                          font-size: 12px;
+                          font-weight: bold;
+                          font-family: verdana, arial, sans-serif;
+                          margin: 4px;
+                          border: 1px solid black; 
+                          background-color: #C3C6EA; 
+                          padding: 6px;
+                        }
+
+-->
+</STYLE> 
+
+<TITLE>LitKicks 24 Hour Poetry Party</TITLE>
+</HEAD>
+
+<BODY>
+<CENTER>
+<TABLE>
+  <TR>
+    <TD>
+      <IMG SRC="partystars.jpg">
+    </TD>
+  </TR>
+</TABLE>
+
+<TABLE BORDER=0 CELLPADDING=12 WIDTH="100%" BGCOLOR="#FFFFFF">
+  <TR>
+    <TD VALIGN=TOP>
+       <TABLE>
+         <TR>
+           <TD VALIGN=MIDDLE>
+             <FONT FACE="helvetica, arial">
+             &nbsp;&nbsp;&nbsp;&nbsp;2:30pm EST<BR><BR>
+             </FONT>
+           </TD>
+         </TR>
+       </TABLE>
+       <DIV CLASS="FIRST"> 
+        <I>Welcome to the LitKicks 24 Hour Poetry Party.  Intro about holman goes here.</I><BR><BR>
+
+<H3>Night of the Living Dead Every Day</H3>
+<I>by Bob Holman</I><BR><BR>
+
+<ul>		<i>“Help Me
+		  I Can See”</i>
+		--sign on Pedro’s begging can</ul>
+				 
+
+Pedro Juan Pietri Aponte and Spalding Gray <BR>
+and me<BR>
+are in a room marked No Exit. They are just dead <BR>
+together in me (age 56 today, living). Sartre says Pedro <BR>
+Buñuel continues Spalding, The Exterminating Angel<BR>
+Braque and Picasso I<BR>
+am quick<BR>
+to add.  The triangulation <BR>
+my dear dead friends and I<BR>
+the third who walks beside, the third man,<BR>
+earth man.<BR>
+One dies in water, one dies in air<BR>
+I walk the earth fair who cares <BR>
+“It is spring again, I wonder<BR>
+why,” as James Schuyler once said <BR>
+wrote to no one<BR>
+in particular and always<BR>
+Pedro’s ironic birthday<BR>
+3/21/44 first day of spring of, a poet<BR>
+who became a poet<BR>
+when he failed miserably<BR>
+as an undertaker<BR>
+died March 2<BR>
+or 3 round midnight<BR>
+twixt time zones<BR>
+to die on two days<BR>
+Mexico to US<BR>
+twixt two cultures<BR>
+on his way to 60.
+<BR><BR>
+What can I say<BR>
+write? Swimming<BR>
+with Spalding upstream to Green<BR>
+Point, the icy flow and corduroy<BR>
+ferrying home. You can’t<BR>
+sleep with the fishes cause<BR>
+the fishes don’t sleep as Nick<BR>
+Jones says<BR>
+sings. He’s a good swimmer<BR>
+even with his dragging foot <BR>
+and head plate, pulls me along<BR>
+to shore where we rest for a while.
+<BR><BR>
+The doors and windows of Romero<BR>
+open in one direction but they open <BR>
+and the zombies are everywhere.  Pedro
+<BR><BR>
+is hooting and Spalding is dancing and <BR>
+I am writing it down down like time sinks.<BR>
+Good line says Pedro who can rhyme<BR>
+sublime with sublime and love with<BR>
+what the fuck. Spalding is pattering <BR>
+and patering, this is their first meeting<BR>
+and now we are here forever someone mentions (ok, me)<BR>
+trying to make the lines that add<BR>
+up not <BR>
+down.
+<BR><BR>
+Only I am breathing. Awfully<BR>
+parochial says my man Spalding<BR>
+Pedro is sleeping Speedo<BR>
+I can’t sleep says Spalding remembering everything
+<BR><BR>
+In Speedo’s dream is life all over<BR>
+but never again<BR>
+never all over again<BR>
+we’d worship all afternoon <BR>
+at the altar in the Men’s Shelter<BR>
+dice and rice and cheap red wine <BR>
+and Spalding says the word Happiness<BR>
+we are all touched as zombies<BR>
+scale the walls to the 38th floor<BR>
+busting in as the room breathes<BR>
+axes in the windows they are singing<BR>
+Happy Birthday to me, surprise, and<BR>
+the words are Auld Lang Syne<BR><BR>
+
+       </DIV>
+   </TD>
+   <TD WIDTH=300 ALIGN=CENTER VALIGN=TOP>
+      <TABLE>
+        <TR>
+          <TD>
+             <DIV CLASS="SECOND"> 
+             <CENTER><FONT SIZE="+1">2pm writing challenge</FONT></CENTER><BR>
+             2pm Challenge Text Here<BR><BR>
+             We will create a composite poem from all the responses.  Please write quickly and honestly.  To submit your words, click this button:<BR>
+             <CENTER>
+             <A HREF="http://www.litkicks.com/BeatPages/partypost.jsp"><IMG SRC="http://www.litkicks.com/24pp/partywrite.jpg" ALT="write"></A></CENTER><BR>
+             The next writing challenge will begin at 3 pm.
+             
+             </DIV>
+          </TD>
+        </TR>
+        <TR>
+          <TD>
+           <TABLE BGCOLOR="#00003F" CELLPADDING=2">
+             <TR>
+               <TD>
+                 <IMG SRC="http://lit-fuse.net/litkicks/photos/davepier2pm.jpg"><BR>
+               </TD>
+             </TR>
+           </TABLE>
+           <FONT SIZE="-1" FACE="Arial, Helvetica">Photo contributed by Dave the Dov</FONT>
+          </TD>
+        </TR>
+        <TR>
+          <TD>
+            <HR NOSHADE COLOR="#000000" SIZE=3 WIDTH="75%">
+            <FONT FACE="Trebuchet MS">
+            Poets need music!  Please check the links on the <A HREF="http://www.litkicks.com/party.html">24 HOUR POETRY PARTY FRONT PAGE</A> for music downloads to keep you company as you write.  We are featuring the work of DJ Spooky along with a couple of other selected cuts.  These downloads will only be available during the 24 hour event.  
+            </FONT>
+          </TD>
+        </TR>
+      </TABLE>
+   </TD>
+  </TR>
+</TABLE>
+
+<BR>
+<FONT FACE="helvetica, arial" SIZE="-1">
+<a href="http://www.litkicks.com/24pp/Party.html">24 HOUR POETRY PARTY</a> is a <a href="http://www.litkicks.com">LitKicks</a> Production.
+</FONT>
+
+</CENTER>
+
+</BODY>
+</HTML>

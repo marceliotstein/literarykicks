@@ -1,0 +1,17 @@
+;Image='queens.gif'
+point 'QnsNorthEast.html' 243,87
+point 'QnsNorthEast.html' 233,36
+point 'QnsNorthEast.html' 304,76
+point 'QnsNorthWest.html' 126,56
+point 'QnsNorthWest.html' 77,97 
+point 'QnsCentral.html' 145, 107
+point 'QnsSouthWest.html' 110,148
+point 'QnsCentral.html' 188,116
+point 'QnsCentral.html' 202,173
+point 'QnsSouthWest.html' 194,225
+point 'QnsSouthEast.html' 273,182
+point 'QnsSouthEast.html' 313,248
+point 'QnsPark.html' 206,110
+point 'QnsBeach.html' 261,354
+point 'QnsBeach.html' 168,378
+point 'QnsBeach.html' 78,386

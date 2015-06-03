@@ -1,0 +1,46 @@
+<?php
+
+
+function lkboardarchive_block_view($delta = '') {
+   $block['subject'] = "";
+   $blockcontent = "";
+   if (isset($_GET['message'])) {
+      $msgid = $_GET['message'];
+      $query = "select forumname, authname, msgdate, subj, body from newmsg where msgid = " . $msgid;
+      $result = db_query($query);
+      foreach ($result as $msg){
+          $forum = $msg->forumname;
+          $title = $msg->subj;
+          $author = $msg->authname;
+          $body = $msg->body;
+          $date = $msg->msgdate;
+           
+          $blockcontent .= "<div class=\"archive-message\">";
+          $blockcontent .= "<article>";
+          $blockcontent .= "<h3 class=\"node-title\">" . $title . "</h3>";
+          $blockcontent .= "<div class=\"side-forum\">Posted to <b>" . $forum . "</b></div><br />";
+          $blockcontent .= "<div class=\"side-by-line\">by <b>" . $author . "</b> on " . $date . "</div><br />";
+          $blockcontent .= "<hr noshade color=\"#000000\"><hr noshade color=\"#000000\"><p>" . $body . "</p><hr noshade color=\"#000000\"><hr noshade color=\"#000000\">";
+          $blockcontent .= "</article>";
+          $blockcontent .= "</div>";
+      }
+   }
+   $block['content'] = $blockcontent;
+   return $block;
+}
+
+function lkboardarchive_block_info() {
+  $blocks['lkmessage'] = array(
+    'info' => t('Board Archive Message'), 
+    'cache' => DRUPAL_NO_CACHE, 
+  );
+  return $blocks;
+}
+
+function lkboardarchive_help($path, $arg) {
+  switch ($path) {
+    case "admin/help#lkboardarchive":
+      return '<p>' . t("Messages from old Litkicks (2001 to 2004) message board archive") . '</p>';
+      break;
+  }
+} 

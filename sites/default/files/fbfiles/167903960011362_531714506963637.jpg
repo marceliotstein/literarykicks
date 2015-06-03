@@ -1,0 +1,8 @@
+<html>
+<head><title> 302 Found
+</title></head>
+<body><h1> 302 Found
+</h1>
+The document has been temporarily moved to <A HREF="%s">here</A>.<hr />
+Powered By <a href='http://www.litespeedtech.com'>LiteSpeed Web Server</a><br />
+<font face="Verdana, Arial, Helvetica" size=-1>LiteSpeed Technologies is not responsible for administration and contents of this web site!</font></body></html>

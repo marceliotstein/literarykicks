@@ -1,0 +1,4 @@
+name = LK Action Poetry Archive
+description = Archive for all Litkicks Action Poetry content
+package = Litkicks
+core = 7.x

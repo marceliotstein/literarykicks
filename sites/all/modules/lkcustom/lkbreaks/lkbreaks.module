@@ -1,0 +1,135 @@
+<?php
+
+function lkbreaks_block_view($delta = '') {
+  $path = request_path();
+  switch($delta) {
+    case 'lkgotbreaks':
+    case 'lkgotnobreaks':
+      $block['subject'] = "";
+      $blockcontent = "";
+      if (user_access('access content')) {
+        if ($delta=="lkgotbreaks") {
+           $result = lkbreaks_got_breaks();
+        } else {
+           $result = lkbreaks_got_no_breaks();
+        }
+        $items = array();
+
+        $rownum = 0;
+        foreach ($result as $nodedata){
+          $rownum++;
+          $nid = $nodedata->nid;
+          $thisnode = node_load($nid);
+          $vid = $nodedata->vid;
+          $date = format_date($nodedata->created);
+
+          $title = l($nodedata->title, 'node/' . $nid);
+
+          $nodepath = drupal_get_path_alias('node/' . $nid);
+          //$result = db_query("select body_value from field_revision_body where entity_id = " . $nid . " and revision_id = " . $vid);
+          //foreach ($result as $row) {
+          //   $fullbody = $row->body_summary;
+          //   $bodysplit = explode("<!--break-->",$fullbody);
+          //   $body = $bodysplit[0];
+          //} 
+          $author = $thisnode->name;
+          $num_comments = $thisnode->comment_count; 
+
+          $dek = "";
+          if (!empty($thisnode->field_dek)) {
+             $dek = $thisnode->field_dek['und'][0]['value'];
+          }
+
+          $story_image = "";
+          if (!empty($thisnode->field_story_image)) {
+             $story_image = "<img src=\"/sites/default/files/" . $thisnode->field_story_image['und'][0]['filename'] . 
+                            "\" alt=\"" . $thisnode->field_story_image['und'][0]['alt'] . "\" />";
+          }
+
+          $comment_string = "";
+          if ($num_comments=="1") {
+            $comment_string = "(1 comment)";
+          } else if ($num_comments!="0") {
+            $comment_string = "(" . $num_comments . " comments)";
+          }
+
+          $blockcontent .= "<div class=\"lkselect-row lkselect-row-" . $rownum . "\">";
+          $blockcontent .= "<article>";
+          $blockcontent .= "<h3 class=\"node-title\">" . $title . "</h3>";
+          $blockcontent .= "<div class=\"side-by-line\">by " . $author . " " . $date . "</div>";
+
+          $blockcontent .= "<div class=\"storyimage\">" . $story_image . "</div>";
+          $blockcontent .= "<div class=\"dek\">" . $dek . "</div><br />";
+          //$blockcontent .= "<div class=\"body\">" . $body . "</div><br />";
+
+          //$blockcontent .= "<div id=\"readmorethoughts\"><a href=\"" . $nodepath . "\">... Read more and add your thoughts " . $comment_string . "</a></div>";
+          $blockcontent .= "</article>";
+          $blockcontent .= "<hr color=\"black\" height=\"3\" width=\"100%\" />";
+          $blockcontent .= "<hr color=\"black\" height=\"3\" width=\"100%\" />";
+          $blockcontent .= "</div>";
+
+        }
+        $block['content'] = $blockcontent;
+      }
+      return $block;
+  }
+}
+
+function lkbreaks_got_breaks(){
+  $today = getdate();
+  $start_time = mktime(0, 0, 0,$today['mon'],($today['mday'] - 12), $today['year']);
+  $end_time = time();
+
+  $query = "select n.nid, n.vid, n.title, n.created 
+            from node n, field_revision_body fbr, node_counter nc 
+            where n.nid = fbr.entity_id
+            and n.nid = nc.nid
+            and n.vid = fbr.revision_id
+            and n.type = 'story'
+            and n.status = 1
+            and locate('<!--break-->',body_value) > 0
+            order by nc.totalcount desc
+            limit 5";
+  $result = db_query($query);
+  return $result;  
+}
+
+function lkbreaks_got_no_breaks(){
+  $today = getdate();
+  $start_time = mktime(0, 0, 0,$today['mon'],($today['mday'] - 12), $today['year']);
+  $end_time = time();
+
+  $query = "select n.nid, n.vid, n.title, n.created 
+            from node n, field_revision_body fbr, node_counter nc  
+            where n.nid = fbr.entity_id
+            and n.nid = nc.nid
+            and n.vid = fbr.revision_id
+            and n.type = 'story'
+            and n.status = 1
+            and locate('<!--break-->',body_value) = 0
+            order by nc.totalcount desc
+            limit 5";
+  $result = db_query($query);
+  return $result;  
+}
+
+function lkbreaks_block_info() {
+  $blocks['lkgotbreaks'] = array(
+    'info' => t('Got Breaks'), //The name that will appear in the block list.
+    'cache' => DRUPAL_CACHE_PER_ROLE, //Default
+  );
+  $blocks['lkgotnobreaks'] = array(
+    'info' => t('Got No Breaks'), //The name that will appear in the block list.
+    'cache' => DRUPAL_CACHE_PER_ROLE, //Default
+  );
+  return $blocks;
+}
+
+function lkbreaks_help($path, $arg) {
+  switch ($path) {
+    case "admin/help#lkbreaks":
+      return '<p>' . t("Temporary view for curating litkicks articles") . '</p>';
+      break;
+  }
+} 
+

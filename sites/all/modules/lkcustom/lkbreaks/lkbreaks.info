@@ -1,0 +1,4 @@
+name = LK Breaks
+description = Temporary view for curating content based on break tags in body field -- for internal/editorial use only
+package = Litkicks
+core = 7.x

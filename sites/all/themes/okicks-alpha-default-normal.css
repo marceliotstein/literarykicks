@@ -1,0 +1,56 @@
+/*
+ * ==========================================================
+ * okicks custom
+ * ==========================================================
+ */
+
+h1.site-name,
+h2.site-name {
+   font-size: 48px;
+   font-weight: normal;
+   letter-spacing: normal;
+}
+
+/*
+ * ==========================================================
+ * regions
+ * ==========================================================
+ */
+
+#region-header-first {
+   width: 202px;
+}
+
+#region-sidebar-first {
+   background-color: #8fafbf;
+   padding: 11px;
+}
+
+#region-content {
+   background-color: #ffffff;
+   padding: 20px;
+}
+
+#region-sidebar-second {
+   background-color: #efefaf;
+}
+
+#section-header {
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+
+#region-sidebar-first .block {
+  border-width: 1px;
+  border-color: #2f2f5f;
+  border-style: solid;
+  padding: 4px;
+}
+
+#region-sidebar-second .block {
+  background-color: #afcfbf;
+  border-width: 1px;
+  border-color: #2f2f5f;
+  border-style: solid;
+}
+

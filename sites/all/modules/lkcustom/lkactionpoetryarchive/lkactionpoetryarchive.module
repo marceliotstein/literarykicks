@@ -1,0 +1,41 @@
+<?php
+
+function lkactionpoetryarchive_getmonthly($year, $month){
+
+  $ret = "";
+  $rownum = 0;
+
+  if ((!empty($year)) && (!empty($month))) {
+    $ymstart = $year . "-" . $month . "-01";
+    $ymend = $year . "-" . $month . "-31";
+    //print $ymstart . " " . $ymend . "<br />";
+
+    $query = "SELECT p.title, p.author, p.date, date_format(p.date,'%M %e, %Y') fdate, p.body, count(pr.row_id) ratings
+              FROM poem p, poem_rating pr
+              WHERE p.poem_id = pr.poem_id 
+              AND p.date between '" . $ymstart . "' AND '" . $ymend . "'
+              AND pr.rating > 0
+              GROUP BY p.title, p.author, p.date
+              ORDER BY p.date ASC";
+
+    $result = db_query($query);
+    foreach ($result as $row){
+      $rownum++;
+      $ret .= "<hr noshade style=\"background:black; height: 2px; width:460px\">";
+      $ret .= "<b>" . $row->title . "</b><br />";
+      $ret .= "<i>by " . $row->author . " on " . $row->fdate . "</i><br /><br />";
+      $ret .= $row->body . "<br /><br />";
+    }
+  }
+
+  return $ret;  
+}
+
+function lkactionpoetryarchive_help($path, $arg) {
+  switch ($path) {
+    case "admin/help#lkactionpoetryarchive":
+      return '<p>' . t("Select action poetry archive for a given month") . '</p>';
+      break;
+  }
+} 
+

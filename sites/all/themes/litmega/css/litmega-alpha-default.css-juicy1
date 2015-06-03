@@ -1,0 +1,170 @@
+/**************************************************/
+/* custom CSS for literary kicks litmega drupal 7 */
+/**************************************************/
+
+/**************/
+/* hyperlinks */
+/**************/
+
+a:link, a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #999900;
+  text-decoration: none;
+}
+
+a:active {
+  color: #555500;
+  text-decoration: none;
+}
+
+/**************************************/
+/* titles, headers and outer elements */
+/**************************************/
+
+body {
+  font: 13px/1.5 Trebuchet MS, Verdana, Helvetica, Arial, sans-serif;
+  background-color: #e3e3e3;
+}
+
+.site-name, .site-name a {
+   padding-top: 30px;
+   padding-right: 30px;
+   font-family: helvetica, arial, sans-serif;
+   font-size: 90px;
+   font-weight: 700;
+   color: #007f4f;
+   line-height: .8em;
+}
+
+.site-slogan {
+   padding-top: 10px;
+   font-family: helvetica, arial, sans-serif;
+   font-size: 22px;
+   font-weight: normal;
+   color: #007f7f;
+}
+
+.site-name a:link, a:visited {
+   color: #007f4f;
+}
+
+.site-name a:active {
+   color: #004f7f;
+}
+
+section {
+   margin-bottom: 27px;
+}
+
+#page-title, h2.node-title {
+   border-bottom: 1px solid #898773;
+   border-top: 1px solid #898773;
+   padding-bottom: 3px;
+   padding-top: 3px;
+   font-size: 2em;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: normal;
+   line-height: 120%;
+   margin: 5px 0;
+}
+
+h2.block-title {
+  background-color: #6FBF7F;
+  font-size: 24px;
+  font-family: helvetica, arial, sans-serif;
+  margin: 0px;
+  margin-bottom: 12px;
+  padding: 8px;
+  border-width: 1px;
+  border-color: #0f0f3f;
+  border-style: solid;
+}
+
+/***********/
+/* regions */
+/***********/
+
+#region-branding {
+  padding-top: 8px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 1.3em;
+  color: #004f9f;
+  float: right;
+}
+
+#region-branding hr {
+  color: #002f4f;
+  background-color: #002f4f;
+  height: 1px;
+}
+
+#region-header-first .region-inner {
+   float: right;
+   margin: 0px;
+   padding: 0px;
+}
+
+div.logo-img {
+   float: right;
+   margin: 0px;
+   margin-right: 0px;
+   padding: 0px;
+} 
+
+img.logo-img {
+   float: right;
+   width: 90%;
+   height: 90%;
+   margin: 0px;
+   padding: 0px;
+}
+
+#region-header-second .region-inner {
+   padding-left: 20px;
+   float: left;
+}
+
+#region-sidebar-first {
+   background-color: #e3e3e3;
+}
+
+#region-sidebar-first .block {
+   background-color: #9fbfcf;
+   border-width: 1px;
+   border-color: #2f2f5f;
+   border-style: solid;
+   padding: 4px;
+}
+
+#region-content {
+   margin-top: 21px;
+   background-color: #ffffff;
+   /*border-width: 1px;
+   border-style: solid;
+   border-color: #000000;
+   */
+}
+
+#region-content .region-inner {
+   padding: 8px;
+}
+
+#region-sidebar-second {
+   background-color: #e3e3e3;
+}
+
+#region-sidebar-second .block {
+   background-color: #afcfbf;
+   border-width: 1px;
+   border-color: #2f2f5f;
+   border-style: solid;
+   padding: 4px;
+}
+
+/*******/
+/* end */
+/*******/

@@ -1,0 +1,8 @@
+
+        foreach ($result as $nodedata){
+          $rownum++;
+          $nid = $nodedata->nid;
+          $thisnode = node_load($nid);
+          $vid = $nodedata->vid;
+          $date = format_date($nodedata->created);
+

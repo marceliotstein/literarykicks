@@ -1,0 +1,490 @@
+/d**************************************************/
+/* custom CSS for literary kicks litmega drupal 7 */
+/**************************************************/
+
+/**********/
+/* styles */
+/**********/
+
+blockquote, blockquote:before, blockquote:after {
+  background-color: #d3d3d3;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /*font-style: italic;*/
+}
+
+a, a:link, a:visited {
+  color: #141437;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #99994f;
+  text-decoration: none;
+}
+
+a:active {
+  color: #55554f;
+  text-decoration: none;
+}
+
+table, td, tr {
+  border-width: 0px;
+}
+
+/******************/
+/* search styling */
+/******************/
+
+.form-actions input {
+  background: #7a9f88;
+  color: #000000;
+}
+
+.form-actions input:hover,
+.form-actions input:hover {
+  background: #9f9f88;
+}
+
+#search-block-form {
+  margin-top: 7px;
+}
+
+#search-block-form .form-text {
+  color: #5a7f68;
+  font-weight: 650;
+}
+
+/**************************************/
+/* titles, headers and outer elements */
+/**************************************/
+
+body {
+   font: 13.5px/1.5 Trebuchet MS, Verdana, Helvetica, Arial, sans-serif;
+   color: #444444;
+   background-color: #e3e3e3;
+}
+
+.site-name, .site-name a {
+   padding-top: 22px;
+   padding-right: 50px;
+   font-family: helvetica, arial, sans-serif;
+   font-size: 74px;
+   font-weight: 650;
+   color: #006f3f;
+   line-height: .8em;
+}
+
+.site-slogan {
+   padding-top: 10px;
+   font-family: helvetica, arial, sans-serif;
+   font-size: 22px;
+   font-weight: normal;
+   color: #007f7f;
+}
+
+.site-name a:link, 
+.site-name a:visited {
+   color: #007f4f;
+}
+
+.site-name a:active {
+   color: #004f7f;
+}
+
+section {
+   margin-bottom: 27px;
+}
+
+h2.block-title { 
+   padding-bottom: 3px;
+   padding-top: 0px;
+   font-size: 35px;
+   color: #001f0f;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: normal;
+   margin: 0px 0px 0px 0px;
+}
+
+.submitted {
+   margin-bottom: 12px;
+   color: #7f7f7f;
+}
+
+#region-content .submitted a {
+   color: #7f7f7f;
+}
+
+#region-sidebar-second .navsubmitted {
+   padding-bottom: 10px;
+}
+
+/************/
+/* branding */
+/************/
+
+#region-branding, #region-branding a, #region-branding a:link, #region-branding a:active, #region-branding a:visited, #region-branding a:hover {
+  margin-left: 21px;
+  font-family: Verdana, Georgia, serif;
+  font-size: 1em;
+  font-variant: small-caps;
+  letter-spacing: -1px;
+  color: #001f4f;
+  padding-top: 6px;
+  padding-bottom: 12px;
+}
+
+#region-branding img {
+  vertical-align: top;
+}
+
+.branding-linkbox {
+  float: right;
+}
+
+/**********/
+/* images */
+/**********/
+
+div.logo-img {
+   float: right;
+   margin: 0px;
+   padding: 0px;
+} 
+
+div.logo-img img {
+   float: right;
+   margin: 0px;
+   padding: 0px;
+}
+
+/******************/
+/* header regions */
+/******************/
+
+#region-header-first .region-inner {
+   float: right;
+   margin: 0px;
+   margin-bottom: 15px;
+   padding: 0px;
+   width: 155px;
+   margin-right: 14px;
+}
+
+#region-header-second .region-inner {
+   float: left;
+   margin-bottom: 15px;
+   margin-left: 14px;
+}
+
+/***************************/
+/* custom for page / front */
+/***************************/
+
+#region-content {
+   float: left;
+   margin-left: 0px;
+   margin-right: 10px;
+   width: 512px;
+}
+
+.not-front #region-content {
+   background-color: #ffffff;
+}
+
+#region-content article {
+   margin-right: 10px;
+   padding: 2px;
+   width: 496px;
+   margin-bottom: 12px;
+}
+
+.front #region-content article {
+   width: 508px;
+   background-color: #ffffff;
+}
+
+/*******************/
+/* content regions */
+/*******************/
+
+#region-sidebar-first {
+   float: left;
+   margin-left: 0px;
+   margin-right: 0px;
+}
+
+#region-sidebar-first .block {
+   padding-bottom: 20px;
+}
+
+#zone-branding {
+   display: none;
+}
+
+#zone-header{
+   display: none;
+}
+
+#zone-content{
+   display: none;
+   margin-top: 0px;
+}
+
+#amazonadbox {
+   margin: 0 auto;
+   width: 100%;
+}
+
+#footerlinks, #footerlinks a {
+   margin: 0 auto;
+   width: 100%;
+   font-family: helvetica, arial, sans-serif;
+   font-size: 10px;
+   font-weight: bold;
+}
+
+#zone-footer a {
+   display: none;
+}
+
+.region-content-inner {
+   margin-left: 0px;
+   margin-right: 0px;
+   padding: 0px;
+}
+
+#region-content h2 {
+   margin-bottom: 0px;
+}
+
+#region-sidebar-second h2 {
+   margin-bottom: 0px;
+   font-family: Trebuchet MS, sans-serif;
+   font-weight: bold;
+   letter-spacing: +1px;
+   font-variant: small-caps;
+}
+
+#region-content h1#page-title, 
+#region-content h1#page-title a,
+#region-content h2#page-title, 
+#region-content h2#page-title a
+#region-content h2.node-title, 
+#region-content h2.node-title a {
+   color: #001f0f;
+   font-family: helvetica, arial, sans-serif;
+   font-size: 35px;
+   font-weight: normal;
+   line-height: 38px;
+}
+
+#region-content .node header,
+#region-content #page-title {
+   margin-left: 14px;
+   margin-bottom: 0px;
+}
+
+.not-front #region-content #page-title, 
+.not-front #region-content .node header {
+   margin-top: 14px;
+}
+
+.front #region-content #page-title {
+   padding-top: 0px;
+} 
+
+.front #region-content .node header {
+   padding-top: 14px;
+}
+
+#region-content .node .field-type-taxonomy-term-reference, 
+#region-content .node footer {
+   margin-left: 14px;
+   margin-right: 14px;
+}
+
+#region-content .field-type-text-with-summary {
+   padding: 14px;
+}
+
+#region-content .field-type-text-with-summary img {
+   margin-left: -13px;
+   padding-bottom: 15px;
+}
+
+#region-sidebar-second {
+   float: right;
+   width: 252px;
+   background-color: #e3e3e3;
+   margin-left: 6px;
+   margin-right: 0px;
+}
+
+#region-sidebar-second article {
+   width: 228px;
+   float: right;
+   padding: 8px;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-bottom: 14px;
+}
+
+#region-content .block {
+   padding: 4px;
+}
+
+.front #readmorethoughts {
+   margin-bottom: 12px;
+}
+
+/*********************/
+/* term page styling */
+/*********************/
+
+.not-front #region-content .node-teaser h2,
+.not-front #region-content .node-teaser h2 a {
+   color: #3f3f3f;
+   font-size: 20px;
+   font-weight: 500px;
+   letter-spacing: normal: 
+}   
+
+.not-front #region-content .node-teaser #addthisbox {
+   display: none;
+}
+
+.not-front #region-content .node-teaser #submitted {
+   font-size: .8em;
+}
+
+.not-front #region-content .node-teaser #readmorethoughts {
+   font-size: .8em;
+}
+
+/*******************/
+/* comment styling */
+/*******************/
+
+div#commentintro {
+   padding-top: 18px;
+}
+
+div#comments h1, div#comments h2 {
+   font-family: helvetica, arial, sans-serif;
+}
+
+div#comments article {
+   width: 464px;
+   border-style: solid;
+   border-width: 1px;
+   border-color: #404048;
+   padding: 6px;
+   margin: 10px;
+   margin-bottom: 18px;
+}
+
+.comment-submitted {
+   font-weight: bold;
+   font-size: 1.1em;
+   font-style: italic;
+   margin-bottom: 16px;
+   margin-left: 0px;
+   padding-left: 0px;
+}
+
+/*******************/
+/* sidebar styling */
+/*******************/
+
+#region-sidebar-second .block {
+   padding: 4px;
+}
+
+#region-sidebar-second .views-row-1 article,
+#region-sidebar-second .views-row-4 article, 
+#region-sidebar-second .views-row-7 article, 
+#region-sidebar-second .views-row-10 article {
+   background-color: #50a29a;
+}
+
+#region-sidebar-second .views-row-2 article,
+#region-sidebar-second .views-row-5 article,
+#region-sidebar-second .views-row-8 article,
+#region-sidebar-second .views-row-11 article {
+   background-color: #7a9f88;
+}
+
+#region-sidebar-second .views-row-3 article,
+#region-sidebar-second .views-row-6 article,
+#region-sidebar-second .views-row-9 article,
+#region-sidebar-second .views-row-12 article {
+   background-color: #a2af88;
+}
+
+#region-sidebar-second h2.node-title, #region-sidebar-second h2.node-title a {
+   font-family: helvetica, arial, sans-serif;
+   font-size: 25px;
+   font-weight: bold;
+   line-height: 24px;
+   color: #001f0f;
+   padding: 6px;
+}
+
+/****************/
+/* node styling */
+/****************/
+
+.dek {
+  font-style: italic;
+}
+
+.storyimage {
+  width: 100%;
+  padding-left: 24px;
+}
+
+#region-sidebar-second img {
+  width: 180px;
+  margin: 0 auto;
+}
+
+#addthisbox img {
+  width: 125px;
+}
+
+.field-type-taxonomy-term-reference {
+   font-family: Verdana, Georgia, serif;
+   font-variant: small-caps;
+   line-height: .83em;
+}
+
+#commentintro, #commentintro a,
+#readmorethoughts, #readmorethoughts a {
+   font-family: Verdana, Georgia, serif;
+   font-weight: bold;
+   font-variant: small-caps;
+}
+
+#commentintro, #commentintro a {
+   font-size: 1.2em;
+}
+
+#readmorethoughts, #readmorethoughts a {
+   float: right;
+}
+
+#addthisbox {
+   width: 100%;
+}
+
+#addthisinnerbox {
+   width: 125px;
+   margin: 0 auto;
+}
+
+/*******/
+/* end */
+/*******/

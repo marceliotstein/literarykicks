@@ -1,0 +1,4 @@
+name = LK Board Archive
+description = Display messages for old (2001 to 2004) Litkicks Jive-based message board data
+package = Litkicks
+core = 7.x
