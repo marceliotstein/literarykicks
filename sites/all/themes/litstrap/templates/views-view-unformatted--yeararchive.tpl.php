@@ -1,17 +1,16 @@
 <?php
-
 /**
  * @file
  * Default simple view template to display a list of rows.
  *
  * @ingroup views_templates
  */
-?>
-<?php if (!empty($title)): ?>
-  <h3><?php print $title; ?></h3>
-<?php endif; ?>
-<?php foreach ($rows as $id => $row): ?>
-  <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
-    <?php print $row; ?>
-  </div>
-<?php endforeach; ?>
+
+$thisarg = explode("?",$_GET['q']);
+$thisyear = str_replace("year/","",$thisarg[0]);
+if (is_numeric($thisyear)):
+  print '<h1 class="pageheader lkheadline">Litkicks Archive: ' . $thisyear . '</h1>';
+  foreach ($rows as $id => $row):
+    print $row;
+  endforeach;
+endif;

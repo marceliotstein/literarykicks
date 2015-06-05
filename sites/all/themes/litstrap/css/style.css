@@ -104,6 +104,18 @@ blockquote p {
   }
 }
 
+/* archive view styles */
+
+.lkarchive-pic {
+  width: 230px;
+  text-align: center;
+  padding-bottom: 22px;
+}
+
+.lkarchive-desc {
+  padding-left: 10px;
+}
+
 /* left sidebar styles */
 
 .article-by-line,

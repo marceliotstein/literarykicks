@@ -33,8 +33,15 @@
     } else if ($id=="created") {
       $created = $field->content;
     } else if ($id=="field_story_image") {
-      $img = $field->content;
+      if ($field->content=='<div class="field-content"></div>') {
+        $img = '<img src="http://litkicks.com/images/pv_good.gif" width="205" height="140" />';
+      } else {
+        $img = $field->content;
+      }
     }
   endforeach;
-  print $img . " " . $title . " " . $name . " " . $created;
+  print '<table class="lkarchive-table"><tr class="lkarchive-tablerow">';
+  print '<td class="lkarchive-pic">' . $img . '</td>';
+  print '<td class="lkarchive-desc">' . $title . '<br />' . $name . $created . '</td>';
+  print '</tr></table>';
 ?>

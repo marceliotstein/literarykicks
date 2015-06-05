@@ -118,6 +118,13 @@ $themeimgbase = $themebase . "/images";
         <div class="lkcore-inner">
           <a id="main-content"></a>
 
+          <?php
+            // in some cases we will suppress title
+            if ($title=="Archive By Year") {
+              $title = null;
+            }
+          ?>
+
           <?php if (!empty($title)): ?>
             <h1 class="page-header lkheadline"><?php print $title; ?></h1>
           <?php endif; ?>
