@@ -8,22 +8,24 @@
   $img = '<img src="http://litkicks.com/sites/default/files/' . $node->field_story_image['und'][0]['filename'] . '" />';
   ?>
 
-  <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl">
-    <div class="lklisting-pic"><?php print $img ?></div>
+  <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl lklisting-entry">
     <div class="lklisting-title"><?php print $title ?></div>
+    <div class="lklisting-pic"><?php print $img ?></div>
     <div class="lklisting-date"><?php print $createdate ?></div>
-    <div class="lklisting-author"><?php print $author ?></div>
+    <div class="lklisting-author">by <?php print $author ?></div>
   </div>
-  <div class="hidden-xs hidden-sm col-md-12 col-lg-12 col-xl-12">
-    <table class="lklisting-table">
-      <tr class="lklisting-tablerow">
+  <div class="hidden-xs hidden-sm col-md-12 col-lg-12 col-xl-12 lklisting-entry">
+    <table>
+      <tr colspan="2">
+        <div class="lklisting-title"><?php print $title ?></div>
+      </tr>
+      <tr>
         <td class="lklisting-pic">
           <?php print $img ?>
         </td>
         <td class="lklisting-desc">
-          <div class="lklisting-title"><?php print $title ?></div>
           <div class="lklisting-date"><?php print $createdate ?></div>
-          <div class="lklisting-author"><?php print $name ?></div>
+          <div class="lklisting-author">by <?php print $name ?></div>
           <!-- AddThis BEGIN -->
           <div class="addthis_sharing_toolbox"></div>
           <!-- AddThis END -->
