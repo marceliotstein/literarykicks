@@ -34,7 +34,7 @@
       $created = $field->content;
     } else if ($id=="field_story_image") {
       if ($field->content=='<div class="field-content"></div>') {
-        $img = '<img src="http://litkicks.com/images/pv_good.gif" width="205" height="140" />';
+        $img = '<img src="http://litkicks.com/images/pv_good.gif" width="190" height="120" />';
       } else {
         $img = $field->content;
       }
