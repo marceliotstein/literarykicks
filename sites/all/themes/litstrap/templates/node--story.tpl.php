@@ -36,12 +36,20 @@
       print $rc;
     ?>
   </div>
-  <br /><br />
 
-  <!-- AddThis BEGIN -->
-  <div class="addthis_sharing_toolbox"></div>
-  <!-- AddThis END -->
-  <br />
+  <div class="lkaddthis">
+    <!-- AddThis BEGIN -->
+    <div class="addthis_sharing_toolbox"></div>
+    <!-- AddThis END -->
+  </div>
+
+  <div class="lkseries-promo">
+    <?php
+      if (!empty($series_promo)) {
+        print $series_promo;
+      }
+    ?>
+  </div>
 
   <?php
     print $commentintro;

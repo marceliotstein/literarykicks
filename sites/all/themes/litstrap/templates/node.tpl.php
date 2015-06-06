@@ -106,6 +106,13 @@
   </div>
 
   <?php
+     print "AAA";
+     if (!empty($series_promo)) {
+       print "BBB";
+       print $series_promo;
+     }
+     print "CCC";
+
      if (($node->type!="tout") &&
          ($node->type!="page")) {
        if (!$teaser || $frontpage) {

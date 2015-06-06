@@ -58,6 +58,12 @@ function litstrap_preprocess_node(&$variables, $hook) {
   }
   $variables['topiclist'] = $topiclist;
 
+  // create series links
+
+  $nid = $variables['node']->nid;
+  $series_promo = lktaxonomy_series_links($nid);
+  $variables['series_promo'] = $series_promo;
+
   // process comments
 
   $numcomments = 0;

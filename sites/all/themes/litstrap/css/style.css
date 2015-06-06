@@ -141,6 +141,15 @@ blockquote p {
   padding: 0px;
 }
 
+.lkaddthis {
+  padding: 14px 0px 14px 0px;
+}
+
+.lkseries-promo {
+   padding: 14px 0px 14px 0px;
+   font-style: italic;
+}
+
 /* left sidebar styles */
 
 .article-by-line,
