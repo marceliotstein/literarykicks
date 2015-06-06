@@ -44,8 +44,8 @@
 <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl">
   <div class="lklisting-pic"><?php print $img ?></div>
   <div class="lklisting-title"><?php print $title ?></div>
-  <div class="lklisting-author"><?php print $name ?></div>
   <div class="lklisting-date"><?php print $created ?></div>
+  <div class="lklisting-author"><?php print $name ?></div>
 </div>
 <div class="hidden-xs hidden-sm col-md-12 col-lg-12 col-xl-12">
   <table class="lklisting-table">
@@ -55,8 +55,8 @@
       </td>
       <td class="lklisting-desc">
         <div class="lklisting-title"><?php print $title ?></div>
-        <div class="lklisting-author"><?php print $name ?></div>
         <div class="lklisting-date"><?php print $created ?></div>
+        <div class="lklisting-author"><?php print $name ?></div>
       </td>
     </tr>
   </table>

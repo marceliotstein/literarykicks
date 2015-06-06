@@ -109,7 +109,7 @@ blockquote p {
 .lklisting-pic {
   width: 230px;
   text-align: center;
-  padding-bottom: 22px;
+  padding-bottom: 10px;
 }
 
 .lklisting-desc {
@@ -117,7 +117,19 @@ blockquote p {
 }
 
 .lklisting-title {
-  padding-bottom: 12px;
+  font-size: 1.4em;
+  font-weight: 300;
+  padding: 0px 0px 3px 0px;
+}
+
+.lklisting-date {
+  padding: 0px;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.lklisting-author {
+  padding: 0px 0px 34px 0px;
 }
 
 /* left sidebar styles */
@@ -129,8 +141,6 @@ blockquote p {
    font-style: italic;
    font-size: 20px;
 }
-
-
 
 .region-sidebar-first {
   padding: 0px;
