@@ -5,7 +5,11 @@
   <?php
   $author = $node->name;
   $createdate = format_date($node->created, 'custom', "F jS, Y");
-  $img = '<img src="http://litkicks.com/sites/default/files/' . $node->field_story_image['und'][0]['filename'] . '" />';
+  if (empty($node->field_story_image)) {
+    $img = '<img src="http://litkicks.com/images/pv_good.gif" width="190" height="120" />';
+  } else {
+    $img = '<img src="http://litkicks.com/sites/default/files/' . $node->field_story_image['und'][0]['filename'] . '" />';
+  }
   ?>
 
   <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl lklisting-entry">
