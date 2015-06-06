@@ -104,16 +104,20 @@ blockquote p {
   }
 }
 
-/* archive view styles */
+/* listing (archive, topic, series, etc.) view styles */
 
-.lkarchive-pic {
+.lklisting-pic {
   width: 230px;
   text-align: center;
   padding-bottom: 22px;
 }
 
-.lkarchive-desc {
+.lklisting-desc {
   padding-left: 10px;
+}
+
+.lklisting-title {
+  padding-bottom: 12px;
 }
 
 /* left sidebar styles */

@@ -40,8 +40,24 @@
       }
     }
   endforeach;
-  print '<table class="lkarchive-table"><tr class="lkarchive-tablerow">';
-  print '<td class="lkarchive-pic">' . $img . '</td>';
-  print '<td class="lkarchive-desc">' . $title . '<br />' . $name . $created . '</td>';
-  print '</tr></table>';
 ?>
+<div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl">
+  <div class="lklisting-pic"><?php print $img ?></div>
+  <div class="lklisting-title"><?php print $title ?></div>
+  <div class="lklisting-author"><?php print $name ?></div>
+  <div class="lklisting-date"><?php print $created ?></div>
+</div>
+<div class="hidden-xs hidden-sm col-md-12 col-lg-12 col-xl-12">
+  <table class="lklisting-table">
+    <tr class="lklisting-tablerow">
+      <td class="lklisting-pic">
+        <?php print $img ?>
+      </td>
+      <td class="lklisting-desc">
+        <div class="lklisting-title"><?php print $title ?></div>
+        <div class="lklisting-author"><?php print $name ?></div>
+        <div class="lklisting-date"><?php print $created ?></div>
+      </td>
+    </tr>
+  </table>
+</div>
