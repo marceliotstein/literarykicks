@@ -119,9 +119,12 @@ $themeimgbase = $themebase . "/images";
           <a id="main-content"></a>
 
           <?php
-            // in some cases we will suppress title
-            if ($title=="Archive By Year") {
-              $title = null;
+            // in some cases we will prefix or suffix title
+            if (!empty($titlesuffix)) {
+              $title = $title . ": " . $titlesuffix;
+            }
+            if (!empty($titleprefix)) {
+              $title = $titleprefix . " " . $title;
             }
           ?>
 

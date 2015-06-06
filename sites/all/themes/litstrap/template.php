@@ -12,6 +12,26 @@ function is_localhost() {
    }
 }
 
+function litstrap_preprocess_page(&$variables) {
+  $thisuri = str_replace("literarykicks/","",request_uri());
+  $uriexp = explode("/",$thisuri);
+
+  // manipulate titles for archive and taxonomy pages
+  $titleprefix = "";
+  $titlesuffix = "";
+  if ($uriexp[1]=="year") {
+    if (is_numeric($uriexp[2])) {
+      $titlesuffix = $uriexp[2];
+    }
+  } else if ($uriexp[1]=="series") {
+    $titleprefix = "Series: ";
+  } else if ($uriexp[1]=="topic") {
+    $titleprefix = "Topic: ";
+  }
+  $variables['titleprefix'] = $titleprefix;
+  $variables['titlesuffix'] = $titlesuffix;
+}
+
 function litstrap_preprocess_node(&$variables, $hook) {
   hide($variables['content']['field_story_image']);
   hide($variables['content']['field_dek']);

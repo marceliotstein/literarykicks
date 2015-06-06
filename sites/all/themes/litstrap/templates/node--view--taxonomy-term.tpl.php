@@ -1,5 +1,7 @@
 <?php
-// primary article (story) node template for litkicks
+/*
+ * template for taxonomy listings
+ */
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php
@@ -14,7 +16,7 @@
   $author = $node->name;
   $createdate = format_date($node->created, 'custom', "F jS, Y");
   if (empty($node->field_story_image)) {
-    $img = '<img src="http://litkicks.com/images/pv_good.gif" width="190" height="120" />';
+    $img = '<a href="' . $thisurl . '"><img src="http://litkicks.com/images/pv_good.gif" width="190" height="120" /></a>';
   } else {
     $img = '<a href="' . $thisurl . '"><img src="http://litkicks.com/sites/default/files/' . $node->field_story_image['und'][0]['filename'] . '" /></a>';
   }
