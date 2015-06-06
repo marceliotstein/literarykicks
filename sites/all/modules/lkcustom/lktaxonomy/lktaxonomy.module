@@ -352,11 +352,14 @@ function lktaxonomy_series_links($nid) {
   $seriesvid . " AND ti.nid = " . $nid;
   $result1 = db_query($query1);
   $seriestid = 0;
-  foreach ($result1 as $thisterm) {
-
+  $seriespath = "";
+  $seriesname = "";
+  foreach ($result1 as $thisterm) { // should be 0 or 1 results
     $seriestid = $thisterm->tid;
     $seriesname = $thisterm->name;
+  }
 
+  if ((!empty($seriesname)) && ($seriestid > 0)) {
     if ($seriestid==$memoirtid) {
       $seriespath = "http://www.litkicks.com/AMemoirInProgress";
     } else if ($seriestid==$pricingtid) {
@@ -368,11 +371,10 @@ function lktaxonomy_series_links($nid) {
     } else {
       $seriespath = "http://www.litkicks.com/" . drupal_get_path_alias("taxonomy/term/$seriestid");
     }
-  }
-  $serieslink = "<a href=\"" . $seriespath . "\">" . $seriesname . "</a>";
-  $slinx = "This article is part of the series <b>" . $serieslink . "</b>. ";
 
-  if ($seriestid > 0) {
+    $serieslink = '<a href="' . $seriespath . '">' . $seriesname . '</a>';
+    $slinx = "This article is part of the series <b>" . $serieslink . "</b>. ";
+
     $query2 = "SELECT n.nid, n.title FROM node n, taxonomy_index ti, node n2 WHERE n.nid = ti.nid AND ti.tid = " .
     $seriestid . " AND n.created > n2.created AND n.status = 1 AND n2.nid = " . $nid . " ORDER BY n.created LIMIT 1";
     $result2 = db_query($query2);
@@ -382,8 +384,8 @@ function lktaxonomy_series_links($nid) {
       $nexttitle = $nextdata->title;
       $thispathalias = "http://www.litkicks.com/" . drupal_get_path_alias("node/$nextnid");
       $nextlink = l($nexttitle,$thispathalias);
-      $slinx .= "The next post in the series is <b>" . $nextlink . "</b>. ";
     }
+    $slinx .= "The next post in the series is <b>" . $nextlink . "</b>. ";
 
     $query3 = "SELECT n.nid, n.title FROM node n, taxonomy_index ti, node n2 WHERE n.nid = ti.nid AND ti.tid = " .
     $seriestid . " AND n.created < n2.created AND n.status = 1 AND n2.nid = " . $nid . " ORDER BY n.created DESC LIMIT 1";
@@ -394,9 +396,8 @@ function lktaxonomy_series_links($nid) {
       $prevtitle = $prevdata->title;
       $thispathalias = "http://www.litkicks.com/" . drupal_get_path_alias("node/$prevnid");
       $prevlink = l($prevtitle,$thispathalias);
-      $slinx .= "The previous post in the series is <b>" . $prevlink . "</b>.";
-
     }
+    $slinx .= "The previous post in the series is <b>" . $prevlink . "</b>.";
   }
   return($slinx);
 }
