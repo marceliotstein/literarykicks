@@ -9,7 +9,7 @@ function lktaxonomy_block_view($delta = '') {
   if (user_access('access content')) {
     $sourcepath = request_path();
     switch ($delta) {
-      case 'lktaxonomyside':  
+      case 'lktaxonomyside':
 
       // use cached data if available
       $cid = "taxside:" . $sourcepath;
@@ -257,12 +257,12 @@ function lktaxonomy_all_latest(){
   $end_time = time();
 
   $query = db_select('node', 'n')
-    ->fields('n', array('nid', 'vid', 'title', 'created'))
-    ->condition('status', 1) //Published.
-    ->condition('type', "story")
-    ->condition('created', array($start_time, $end_time), 'BETWEEN')
-    ->orderBy('created', 'DESC') //Most recent first.
-    ->execute();
+  ->fields('n', array('nid', 'vid', 'title', 'created'))
+  ->condition('status', 1) //Published.
+  ->condition('type', "story")
+  ->condition('created', array($start_time, $end_time), 'BETWEEN')
+  ->orderBy('created', 'DESC') //Most recent first.
+  ->execute();
   return $query;
 }
 
@@ -275,11 +275,11 @@ function lktaxonomy_all_latest_popular(){
   $end_time = time();
 
   $query = "SELECT n.nid AS nid, n.vid AS vid, n.title AS title, n.created AS created
-            FROM node n
-            JOIN node_counter nc ON nc.nid = n.nid
-            WHERE (status = '1') AND (type = 'story') AND (created BETWEEN '" . $start_time . "' AND '" . $end_time . "')
-            ORDER BY nc.daycount DESC
-            LIMIT 12 OFFSET 0";
+  FROM node n
+  JOIN node_counter nc ON nc.nid = n.nid
+  WHERE (status = '1') AND (type = 'story') AND (created BETWEEN '" . $start_time . "' AND '" . $end_time . "')
+  ORDER BY nc.daycount DESC
+  LIMIT 12 OFFSET 0";
   $result = db_query($query);
   return $result;
 
@@ -311,8 +311,8 @@ function lktaxonomy_block_info() {
 function lktaxonomy_help($path, $arg) {
   switch ($path) {
     case "admin/help#lktaxonomy":
-      return '<p>' . t("Select related articles for a node based on all taxonomy terms") . '</p>';
-      break;
+    return '<p>' . t("Select related articles for a node based on all taxonomy terms") . '</p>';
+    break;
   }
 }
 
@@ -324,10 +324,10 @@ function get_nid_from_alias($pathalias) {
   $query = "select source from url_alias where alias = '" . $pathalias . "'";
   $result = db_query($query);
   foreach ($result as $aliasdata){
-     $fullsource = $aliasdata->source;
+    $fullsource = $aliasdata->source;
   }
   if (!empty($fullsource)) {
-     $nid = intval(str_replace("node/","",$fullsource));
+    $nid = intval(str_replace("node/","",$fullsource));
   }
   print "<!-- GET NID FROM ALIAS: " . $nid . "-->";
   return $nid;
@@ -336,80 +336,67 @@ function get_nid_from_alias($pathalias) {
 // add links at bottom of node if a series term is present
 
 function lktaxonomy_series_links($nid) {
-    global $user;
-    $enable_series_links = true;
-    $slinx = "";
+  //
+  // a few assumed taxonomy values.
+  // series vocabulary must be 3.
+  //
 
-    // use cached data if available
-    $cid = "serieslinks:" . $nid;
-    if ($cached = cache_get($cid,'cache')) {
-       $slinx = $cached->data;
-       return $slinx;
+  $memoirtid = 89;
+  $pricingtid = 92;
+  $prousttid = 95;
+  $bardotid = 100;
+  $seriesvid = 3;
+
+  $slinx = "";
+  $query1 = "SELECT td.tid, td.name FROM taxonomy_term_data td, taxonomy_index ti WHERE td.tid = ti.tid AND td.vid = " .
+  $seriesvid . " AND ti.nid = " . $nid;
+  $result1 = db_query($query1);
+  $seriestid = 0;
+  foreach ($result1 as $thisterm) {
+
+    $seriestid = $thisterm->tid;
+    $seriesname = $thisterm->name;
+
+    if ($seriestid==$memoirtid) {
+      $seriespath = "http://www.litkicks.com/AMemoirInProgress";
+    } else if ($seriestid==$pricingtid) {
+      $seriespath = "http://www.litkicks.com/BookPricingIndex";
+    } else if ($seriestid==$prousttid) {
+      $seriespath = "http://www.litkicks.com/BeyondTheMadeleines";
+    } else if ($seriestid==$bardotid) {
+      $seriespath = "http://www.litkicks.com/SlicedBardo";
+    } else {
+      $seriespath = "http://www.litkicks.com/" . drupal_get_path_alias("taxonomy/term/$seriestid");
+    }
+  }
+  $serieslink = "<a href=\"" . $seriespath . "\">" . $seriesname . "</a>";
+  $slinx = "This article is part of the series <b>" . $serieslink . "</b>. ";
+
+  if ($seriestid > 0) {
+    $query2 = "SELECT n.nid, n.title FROM node n, taxonomy_index ti, node n2 WHERE n.nid = ti.nid AND ti.tid = " .
+    $seriestid . " AND n.created > n2.created AND n.status = 1 AND n2.nid = " . $nid . " ORDER BY n.created LIMIT 1";
+    $result2 = db_query($query2);
+    $nextnid = 0;
+    foreach ($result2 as $nextdata) {
+      $nextnid = $nextdata->nid;
+      $nexttitle = $nextdata->title;
+      $thispathalias = "http://www.litkicks.com/" . drupal_get_path_alias("node/$nextnid");
+      $nextlink = l($nexttitle,$thispathalias);
+      $slinx .= "The next post in the series is <b>" . $nextlink . "</b>. ";
     }
 
-    //
-    // series vocabulary is hardcoded as 3
-    //
-    $seriesvid = 3;
-    if ($enable_series_links) {
-       $query1 = "SELECT td.tid, td.name FROM taxonomy_term_data td, taxonomy_index ti WHERE td.tid = ti.tid AND td.vid = " .
-                 $seriesvid . " AND ti.nid = " . $nid;
-       $result1 = db_query($query1);
-       $seriestid = 0;
-       foreach ($result1 as $thisterm) {
-          $seriestid = $thisterm->tid;
-          $seriesname = $thisterm->name;
-          //
-          // a few more hard-coded taxonomy values
-          //
-          $memoirtid = 89;
-          $pricingtid = 92;
-          $prousttid = 95;
-          $bardotid = 100;
-          if ($seriestid==$memoirtid) {
-             $seriespath = "http://www.litkicks.com/AMemoirInProgress";
-          } else if ($seriestid==$pricingtid) {
-             $seriespath = "http://www.litkicks.com/BookPricingIndex";
-          } else if ($seriestid==$prousttid) {
-             $seriespath = "http://www.litkicks.com/BeyondTheMadeleines";
-          } else if ($seriestid==$bardotid) {
-             $seriespath = "http://www.litkicks.com/SlicedBardo";
-          } else {
-             $seriespath = "http://www.litkicks.com/" . drupal_get_path_alias("taxonomy/term/$seriestid");
-          }
-          $serieslink = "<a href=\"" . $seriespath . "\">" . $seriesname . "</a>";
-       }
-       if ($seriestid > 0) {
-          $query2 = "SELECT n.nid, n.title FROM node n, taxonomy_index ti, node n2 WHERE n.nid = ti.nid AND ti.tid = " .
-                    $seriestid . " AND n.created > n2.created AND n.status = 1 AND n2.nid = " . $nid . " ORDER BY n.created LIMIT 1";
-          $result2 = db_query($query2);
-          $nextnid = 0;
-          foreach ($result2 as $nextdata) {
-             $nextnid = $nextdata->nid;
-             $nexttitle = $nextdata->title;
-             $thispathalias = "http://www.litkicks.com/" . drupal_get_path_alias("node/$nextnid");
-             $nextlink = l($nexttitle,$thispathalias);
-             $slinx .= "The next post in the series is <b>" . $nextlink . "</b>. ";
-          }
-          $query3 = "SELECT n.nid, n.title FROM node n, taxonomy_index ti, node n2 WHERE n.nid = ti.nid AND ti.tid = " .
-                    $seriestid . " AND n.created < n2.created AND n.status = 1 AND n2.nid = " . $nid . " ORDER BY n.created DESC LIMIT 1";
-          $result3 = db_query($query3);
-          $prevnid = 0;
-          foreach ($result3 as $prevdata) {
-             $prevnid = $prevdata->nid;
-             $prevtitle = $prevdata->title;
-             $thispathalias = "http://www.litkicks.com/" . drupal_get_path_alias("node/$prevnid");
-             $prevlink = l($prevtitle,$thispathalias);
-             $slinx .= "The previous post in the series is <b>" . $prevlink . "</b>.";
-          }
-          $slinx .= "</i>";
-       }
-    }
-    // write data to cache
+    $query3 = "SELECT n.nid, n.title FROM node n, taxonomy_index ti, node n2 WHERE n.nid = ti.nid AND ti.tid = " .
+    $seriestid . " AND n.created < n2.created AND n.status = 1 AND n2.nid = " . $nid . " ORDER BY n.created DESC LIMIT 1";
+    $result3 = db_query($query3);
+    $prevnid = 0;
+    foreach ($result3 as $prevdata) {
+      $prevnid = $prevdata->nid;
+      $prevtitle = $prevdata->title;
+      $thispathalias = "http://www.litkicks.com/" . drupal_get_path_alias("node/$prevnid");
+      $prevlink = l($prevtitle,$thispathalias);
+      $slinx .= "The previous post in the series is <b>" . $prevlink . "</b>.";
 
-    if ($user->uid==0) {
-        $expire = time() + (60 * 360); // cache for six hours
-        cache_set($cid, $slinx, 'cache', $expire);
     }
-    return($slinx);
+  }
+  return($slinx);
 }
