@@ -20,13 +20,13 @@
   }
   ?>
 
-  <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl lklisting-entry">
+  <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl lklisting-item">
     <div class="lklisting-title"><?php print $titlelink ?></div>
     <div class="lklisting-pic"><?php print $img ?></div>
     <div class="lklisting-date"><?php print $createdate ?></div>
     <div class="lklisting-author">by <?php print $author ?></div>
   </div>
-  <div class="hidden-xs hidden-sm col-md-12 col-lg-12 col-xl-12 lklisting-entry">
+  <div class="hidden-xs hidden-sm col-md-12 col-lg-12 col-xl-12 lklisting-item">
     <table>
       <tr>
         <td class="lklisting-pic">
