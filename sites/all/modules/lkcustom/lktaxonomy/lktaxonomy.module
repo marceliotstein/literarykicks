@@ -347,7 +347,6 @@ function lktaxonomy_series_links($nid) {
   $bardotid = 100;
   $seriesvid = 3;
 
-  $slinx = "";
   $query1 = "SELECT td.tid, td.name FROM taxonomy_term_data td, taxonomy_index ti WHERE td.tid = ti.tid AND td.vid = " .
   $seriesvid . " AND ti.nid = " . $nid;
   $result1 = db_query($query1);
@@ -391,13 +390,18 @@ function lktaxonomy_series_links($nid) {
     $seriestid . " AND n.created < n2.created AND n.status = 1 AND n2.nid = " . $nid . " ORDER BY n.created DESC LIMIT 1";
     $result3 = db_query($query3);
     $prevnid = 0;
+    $prevlink = null;
     foreach ($result3 as $prevdata) {
       $prevnid = $prevdata->nid;
       $prevtitle = $prevdata->title;
       $thispathalias = "http://www.litkicks.com/" . drupal_get_path_alias("node/$prevnid");
       $prevlink = l($prevtitle,$thispathalias);
     }
-    $slinx .= "The previous post in the series is <b>" . $prevlink . "</b>.";
+    if (!empty($prevlink)) {
+      $slinx .= "The previous post in the series is <b>" . $prevlink . "</b>.";
+    }
+  } else {
+    $slinx = "";
   }
   return($slinx);
 }
