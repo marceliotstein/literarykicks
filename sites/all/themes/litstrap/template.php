@@ -68,7 +68,7 @@ function litstrap_preprocess_node(&$variables, $hook) {
 
   $numcomments = 0;
   if (!empty($variables['content']['comments'])) {
-    $numcomments = count($variables['content']['comments']['comments']);
+    $numcomments = db_query("SELECT COUNT(cid) AS count FROM {comment} WHERE nid =:nid",array(":nid"=>$variables['nid']))->fetchField();
   }
   $commentintro = "";
   $commentstr = "";
