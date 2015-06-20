@@ -57,9 +57,9 @@
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <script src="/sites/all/themes/litstrap/js/external_links.js"></script>
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=asheresque" async="async"></script>
   <?php print $scripts; ?>
+  <script src="/sites/all/themes/litstrap/js/external_links.js"></script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
