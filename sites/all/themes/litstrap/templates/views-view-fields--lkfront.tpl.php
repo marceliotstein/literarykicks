@@ -53,8 +53,8 @@ foreach ($fields as $id => $field) {
       $body .= "</div>"; // close the div that opens the body
       // HACK FOR LOCALHOST
       if (is_localhost()) {
-        $body = str_replace("/sites/default/files","/litkicks-new/sites/default/files",$body);
-        $body = str_replace("\"sites/default/files","\"/litkicks-new/sites/default/files",$body);
+        $body = str_replace("/sites/default/files","/literarykicks/sites/default/files",$body);
+        $body = str_replace("\"sites/default/files","\"/literarykicks/sites/default/files",$body);
       }
       // END OF LOCALHOST HACK
    }

@@ -59,7 +59,12 @@
   <![endif]-->
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=asheresque" async="async"></script>
   <?php print $scripts; ?>
-  <script src="/sites/all/themes/litstrap/js/external_links.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function() {
+      // all links open new window
+      jQuery('a[href^=http]').attr('target','_blank');
+    });
+  </script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">

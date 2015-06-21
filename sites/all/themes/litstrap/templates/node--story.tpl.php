@@ -29,8 +29,8 @@
       $rc = render($content);
       // HACK FOR LOCALHOST
       if (is_localhost()) {
-        $rc = str_replace("/sites/default/files","/litkicks-new/sites/default/files",$rc);
-        $rc = str_replace("\"sites/default/files","\"/litkicks-new/sites/default/files",$rc);
+        $rc = str_replace("/sites/default/files","/literarykicks/sites/default/files",$rc);
+        $rc = str_replace("\"sites/default/files","\"/literarykicks/sites/default/files",$rc);
       }
       // END OF LOCALHOST HACK
       print $rc;
