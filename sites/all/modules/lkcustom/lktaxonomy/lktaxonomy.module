@@ -378,13 +378,16 @@ function lktaxonomy_series_links($nid) {
     $seriestid . " AND n.created > n2.created AND n.status = 1 AND n2.nid = " . $nid . " ORDER BY n.created LIMIT 1";
     $result2 = db_query($query2);
     $nextnid = 0;
+    $nextlink = null;
     foreach ($result2 as $nextdata) {
       $nextnid = $nextdata->nid;
       $nexttitle = $nextdata->title;
       $thispathalias = "http://www.litkicks.com/" . drupal_get_path_alias("node/$nextnid");
       $nextlink = l($nexttitle,$thispathalias);
     }
-    $slinx .= "The next post in the series is <b>" . $nextlink . "</b>. ";
+    if (!empty($nextlink)) {
+      $slinx .= "The next post in the series is <b>" . $nextlink . "</b>. ";
+    }
 
     $query3 = "SELECT n.nid, n.title FROM node n, taxonomy_index ti, node n2 WHERE n.nid = ti.nid AND ti.tid = " .
     $seriestid . " AND n.created < n2.created AND n.status = 1 AND n2.nid = " . $nid . " ORDER BY n.created DESC LIMIT 1";
